@@ -1,6 +1,0 @@
-framework module Pods_WZCardSlide_Tests {
-  umbrella header "Pods-WZCardSlide_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}

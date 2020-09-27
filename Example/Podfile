@@ -2,10 +2,4 @@ use_frameworks!
 
 target 'WZCardSlide_Example' do
   pod 'WZCardSlide', :path => '../'
-
-  target 'WZCardSlide_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

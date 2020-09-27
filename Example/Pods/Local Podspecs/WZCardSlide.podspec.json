@@ -1,22 +1,26 @@
 {
   "name": "WZCardSlide",
-  "version": "0.1.0",
-  "summary": "A short description of WZCardSlide.",
+  "version": "2.0.0",
+  "summary": "A short description of WZCardSlide.卡片滑动",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/ppqx/WZCardSlide",
+  "homepage": "https://github.com/WZLYiOS/WZCardSlide",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "ppqx": "739140860@qq.com"
+    "qiuqixiang": "739140860@qq.com"
   },
   "source": {
-    "git": "https://github.com/ppqx/WZCardSlide.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/WZLYiOS/WZCardSlide.git",
+    "tag": "2.0.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "WZCardSlide/Classes/**/*"
+  "swift_versions": "5.0",
+  "requires_arc": true,
+  "static_framework": true,
+  "source_files": "WZCardSlide/Classes/**/*.{h,swift}",
+  "swift_version": "5.0"
 }

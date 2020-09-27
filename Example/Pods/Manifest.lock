@@ -1,5 +1,5 @@
 PODS:
-  - WZCardSlide (0.1.0)
+  - WZCardSlide (2.0.0)
 
 DEPENDENCIES:
   - WZCardSlide (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WZCardSlide: 026302243c939b677e9959d1727b4a6d91a2752a
+  WZCardSlide: fad6208079b3555548de4fbc2d5b8f9dd8e15f13
 
-PODFILE CHECKSUM: d1cbd9bc8a1a93a50daf798c29d258effecaf910
+PODFILE CHECKSUM: cf9a6763dd8274a2816a5c67933d6694b5994f09
 
 COCOAPODS: 1.9.1
