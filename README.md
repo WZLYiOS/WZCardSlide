@@ -1,29 +1,21 @@
 # WZCardSlide
 
-[![CI Status](https://img.shields.io/travis/ppqx/WZCardSlide.svg?style=flat)](https://travis-ci.org/ppqx/WZCardSlide)
-[![Version](https://img.shields.io/cocoapods/v/WZCardSlide.svg?style=flat)](https://cocoapods.org/pods/WZCardSlide)
-[![License](https://img.shields.io/cocoapods/l/WZCardSlide.svg?style=flat)](https://cocoapods.org/pods/WZCardSlide)
-[![Platform](https://img.shields.io/cocoapods/p/WZCardSlide.svg?style=flat)](https://cocoapods.org/pods/WZCardSlide)
+## Requirements:
+- **iOS** 9.0+
+- Xcode 10.0+
+- Swift 5.0+
 
-## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+## Installation Cocoapods
+<pre><code class="ruby language-ruby">pod 'WZCardSlide', '~> 2.0.0'</code></pre>
 
-## Requirements
+## Instructions
+- Shuffle因为产品要求做到跟珍爱网的一些参数一样，所以fork了Shuffle，并且修改了一些协议，以及自定义方法等。
 
-## Installation
-
-WZCardSlide is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'WZCardSlide'
-```
-
-## Author
-
-ppqx, 739140860@qq.com
+## Reference
+<ul>
+<li><a href="https://github.com/mac-gallagher/Shuffle"><code>Shuffle</code></a></li>
+</ul>
 
 ## License
-
-WZCardSlide is available under the MIT license. See the LICENSE file for more info.
+WZAlamofire is released under an MIT license. See [LICENSE](LICENSE) for more information.
