@@ -19,7 +19,7 @@
 		0FC2E5E8A81A16057B39F490 /* Pods_WZCardSlide_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WZCardSlide_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27D37F28C959A00D5397CF1B /* Pods-WZCardSlide_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WZCardSlide_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WZCardSlide_Tests/Pods-WZCardSlide_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		346AF149793DC3C1CF883A8B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		48793763C1D1FE5F9788FBE7 /* WZCardSlide.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WZCardSlide.podspec; path = ../WZCardSlide.podspec; sourceTree = "<group>"; };
+		48793763C1D1FE5F9788FBE7 /* WZCardSlide.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WZCardSlide.podspec; path = ../WZCardSlide.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* WZCardSlide_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WZCardSlide_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };

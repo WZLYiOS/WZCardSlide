@@ -80,6 +80,8 @@ open class SwipeCard: SwipeView {
 
   /// 二级的卡片取消是否动画
   public var toCardisCancelAnimation: Bool = true
+  /// 是否全屏
+  public var overlaysIsFullScreen: Bool = false
   private let overlayContainer = UIView()
   private var overlays = [SwipeDirection: UIView]()
 
@@ -134,7 +136,9 @@ open class SwipeCard: SwipeView {
   private func layoutOverlays() {
     overlayContainer.frame = layoutProvider.createOverlayContainerFrame(for: self)
     bringSubviewToFront(overlayContainer)
-    overlays.values.forEach { $0.frame = overlayContainer.bounds }
+    if overlaysIsFullScreen {
+        overlays.values.forEach { $0.frame = overlayContainer.bounds }
+    }
   }
 
   // MARK: - Overrides
