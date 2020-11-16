@@ -1,6 +1,6 @@
 {
   "name": "WZCardSlide",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "summary": "A short description of WZCardSlide.卡片滑动",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/WZLYiOS/WZCardSlide",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/WZLYiOS/WZCardSlide.git",
-    "tag": "2.0.0"
+    "tag": "2.1.0"
   },
   "platforms": {
     "ios": "10.0"

@@ -1,242 +1,294 @@
-///
-/// MIT License
-///
-/// Copyright (c) 2020 Mac Gallagher
-///
-/// Permission is hereby granted, free of charge, to any person obtaining a copy
-/// of this software and associated documentation files (the "Software"), to deal
-/// in the Software without restriction, including without limitation the rights
-/// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-/// copies of the Software, and to permit persons to whom the Software is
-/// furnished to do so, subject to the following conditions:
-///
-/// The above copyright notice and this permission notice shall be included in all
-/// copies or substantial portions of the Software.
-///
-/// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-/// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-/// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-/// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-/// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-/// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-/// SOFTWARE.
-///
+//
+//  CardStackAnimatable.swift
+//  CardView
+//
+//  Created by xiaobin liu on 2020/10/4.
+//  Copyright © 2020 我主良缘. All rights reserved.
+//
 
 import Foundation
 
+
+/// MARK - 卡片动画协议
 protocol CardStackAnimatable {
-  func animateReset(_ cardStack: SwipeCardStack,
-                    topCard: SwipeCard)
-  func animateShift(_ cardStack: SwipeCardStack,
-                    withDistance distance: Int,
-                    animated: Bool,
-                    completion: ((Bool) -> Void)?)
-  func animateSwipe(_ cardStack: SwipeCardStack,
-                    topCard: SwipeCard,
-                    direction: SwipeDirection,
-                    forced: Bool,
-                    animated: Bool,
-                    completion: ((Bool) -> Void)?)
-  func animateUndo(_ cardStack: SwipeCardStack,
-                   topCard: SwipeCard,
-                   animated: Bool,
-                   completion: ((Bool) -> Void)?)
-  func removeAllCardAnimations(_ cardStack: SwipeCardStack)
-  func removeBackgroundCardAnimations(_ cardStack: SwipeCardStack)
+    
+    
+    /// 重置
+    /// - Parameters:
+    ///   - cardStack: SwipeCardStack
+    ///   - topCard: SwipeCard
+    func animateReset(_ cardStack: SwipeCardStack,
+                      topCard: SwipeCard)
+    
+    
+    /// 转变
+    /// - Parameters:
+    ///   - cardStack: SwipeCardStack
+    ///   - distance: distance
+    ///   - animated: animated
+    ///   - completion: completion
+    func animateShift(_ cardStack: SwipeCardStack,
+                      withDistance distance: Int,
+                      animated: Bool,
+                      completion: ((Bool) -> Void)?)
+    
+    
+    /// 刷卡动画
+    /// - Parameters:
+    ///   - cardStack: SwipeCardStack
+    ///   - topCard: SwipeCard
+    ///   - direction: SwipeDirection
+    ///   - forced: forced
+    ///   - animated: animated
+    ///   - completion: completion
+    func animateSwipe(_ cardStack: SwipeCardStack,
+                      topCard: SwipeCard,
+                      direction: SwipeDirection,
+                      forced: Bool,
+                      animated: Bool,
+                      completion: ((Bool) -> Void)?)
+    
+    
+    
+    /// 撤销动画
+    /// - Parameters:
+    ///   - cardStack: SwipeCardStack
+    ///   - topCard: SwipeCard
+    ///   - animated: animated
+    ///   - completion: completion
+    func animateUndo(_ cardStack: SwipeCardStack,
+                     topCard: SwipeCard,
+                     animated: Bool,
+                     completion: ((Bool) -> Void)?)
+    
+    
+    /// 移除所有卡片动画
+    /// - Parameter cardStack: SwipeCardStack
+    func removeAllCardAnimations(_ cardStack: SwipeCardStack)
+    
+    
+    /// 移除背景卡片动画
+    /// - Parameter cardStack: SwipeCardStack
+    func removeBackgroundCardAnimations(_ cardStack: SwipeCardStack)
 }
 
-/// The background card animator for the card stack.
-///
-/// All methods should be called only after the `CardStackManager` has been updated.
+
+
+/// MARK - 卡片堆栈的背景卡片动画器
 class CardStackAnimator: CardStackAnimatable {
-
-  static let shared = CardStackAnimator()
-
-  // MARK: - Main Methods
-
-  func animateReset(_ cardStack: SwipeCardStack,
-                    topCard: SwipeCard) {
-    removeBackgroundCardAnimations(cardStack)
-
-    Animator.animateKeyFrames(withDuration: resetDuration(cardStack, topCard: topCard),
-                              options: .allowUserInteraction,
-                              animations: { [weak self] in
-                                self?.addCancelSwipeAnimationKeyFrames(cardStack) },
-                              completion: nil)
-  }
-
-  func animateShift(_ cardStack: SwipeCardStack,
-                    withDistance distance: Int,
-                    animated: Bool,
-                    completion: ((Bool) -> Void)?) {
-    removeAllCardAnimations(cardStack)
-
-    if !animated {
-      for (position, value) in cardStack.visibleCards.enumerated() {
-        value.card.transform = cardStack.transform(forCardAtPosition: position)
-      }
-      completion?(true)
-      return
+    
+    
+    /// 重置
+    /// - Parameters:
+    ///   - cardStack: SwipeCardStack
+    ///   - topCard: SwipeCard
+    func animateReset(_ cardStack: SwipeCardStack,
+                      topCard: SwipeCard) {
+        removeBackgroundCardAnimations(cardStack)
+        
+        Animator.animateKeyFrames(withDuration: resetDuration(cardStack, topCard: topCard),
+                                  options: .allowUserInteraction,
+                                  animations: { [weak self] in
+                                    self?.addCancelSwipeAnimationKeyFrames(cardStack) },
+                                  completion: nil)
     }
-
-    // place background cards in old positions
-    for (position, value) in cardStack.visibleCards.enumerated() {
-      value.card.transform = cardStack.transform(forCardAtPosition: position + distance)
+    
+    /// 转变
+    /// - Parameters:
+    ///   - cardStack: SwipeCardStack
+    ///   - distance: distance
+    ///   - animated: animated
+    ///   - completion: completion
+    func animateShift(_ cardStack: SwipeCardStack,
+                      withDistance distance: Int,
+                      animated: Bool,
+                      completion: ((Bool) -> Void)?) {
+        removeAllCardAnimations(cardStack)
+        
+        if !animated {
+            for (position, value) in cardStack.visibleCards.enumerated() {
+                value.card.transform = cardStack.transform(forCardAtPosition: position)
+            }
+            completion?(true)
+            return
+        }
+        
+        // 将背景卡放在旧的位置
+        for (position, value) in cardStack.visibleCards.enumerated() {
+            value.card.transform = cardStack.transform(forCardAtPosition: position + distance)
+        }
+        
+        // 动画背景卡到新的位置
+        Animator.animateKeyFrames(withDuration: shiftDuration(cardStack),
+                                  animations: { [weak self] in
+                                    self?.addShiftAnimationKeyFrames(cardStack) },
+                                  completion: completion)
     }
-
-    // animate background cards to new positions
-    Animator.animateKeyFrames(withDuration: shiftDuration(cardStack),
-                              animations: { [weak self] in
-                                self?.addShiftAnimationKeyFrames(cardStack) },
-                              completion: completion)
-  }
-
-  func animateSwipe(_ cardStack: SwipeCardStack,
-                    topCard: SwipeCard,
-                    direction: SwipeDirection,
-                    forced: Bool,
-                    animated: Bool,
-                    completion: ((Bool) -> Void)?) {
-    removeBackgroundCardAnimations(cardStack)
-
-    if !animated {
-      for (position, value) in cardStack.visibleCards.enumerated() {
-        cardStack.layoutCard(value.card, at: position)
-      }
-      completion?(true)
-      return
+    
+    /// 刷卡动画
+    /// - Parameters:
+    ///   - cardStack: SwipeCardStack
+    ///   - topCard: SwipeCard
+    ///   - direction: SwipeDirection
+    ///   - forced: forced
+    ///   - animated: animated
+    ///   - completion: completion
+    func animateSwipe(_ cardStack: SwipeCardStack,
+                      topCard: SwipeCard,
+                      direction: SwipeDirection,
+                      forced: Bool,
+                      animated: Bool,
+                      completion: ((Bool) -> Void)?) {
+        removeBackgroundCardAnimations(cardStack)
+        
+        if !animated {
+            for (position, value) in cardStack.visibleCards.enumerated() {
+                cardStack.layoutCard(value.card, at: position)
+            }
+            completion?(true)
+            return
+        }
+        
+        let delay = swipeDelay(for: topCard, forced: forced)
+        
+        let duration = swipeDuration(cardStack,
+                                     topCard: topCard,
+                                     direction: direction,
+                                     forced: forced)
+        // 没有背景卡可供动画使用，所以我们只是延迟调用completion block
+        if cardStack.visibleCards.isEmpty {
+            DispatchQueue.main.asyncAfter(deadline: .now() + delay + duration) {
+                completion?(true)
+            }
+            return
+        }
+        
+        Animator.animateKeyFrames(withDuration: duration,
+                                  delay: delay,
+                                  animations: { [weak self] in
+                                    self?.addSwipeAnimationKeyFrames(cardStack) },
+                                  completion: completion)
     }
-
-    let delay = swipeDelay(for: topCard, forced: forced)
-    let duration = swipeDuration(cardStack,
-                                 topCard: topCard,
-                                 direction: direction,
-                                 forced: forced)
-
-    // no background cards left to animate, so we instead just delay calling the completion block
-    if cardStack.visibleCards.isEmpty {
-      DispatchQueue.main.asyncAfter(deadline: .now() + delay + duration) {
-        completion?(true)
-      }
-      return
-    }
-
-    Animator.animateKeyFrames(withDuration: duration,
-                              delay: delay,
-                              animations: { [weak self] in
-                                self?.addSwipeAnimationKeyFrames(cardStack) },
-                              completion: completion)
-  }
-
-  func animateUndo(_ cardStack: SwipeCardStack,
-                   topCard: SwipeCard,
-                   animated: Bool,
-                   completion: ((Bool) -> Void)?) {
-    removeBackgroundCardAnimations(cardStack)
-
-    if !animated {
-      for (position, card) in cardStack.backgroundCards.enumerated() {
-        cardStack.layoutCard(card, at: position + 1)
-      }
-      completion?(true)
-      return
-    }
-
-    // place background cards in old positions
-    for (position, card) in cardStack.backgroundCards.enumerated() {
-      card.transform = cardStack.transform(forCardAtPosition: position)
-    }
-
-    // animate background cards to new positions
-    Animator.animateKeyFrames(withDuration: undoDuration(cardStack, topCard: topCard),
-                              animations: { [weak self] in
-                                self?.addUndoAnimationKeyFrames(cardStack) },
-                              completion: completion)
-  }
-
-  func removeBackgroundCardAnimations(_ cardStack: SwipeCardStack) {
-    cardStack.backgroundCards.forEach { $0.removeAllAnimations() }
-  }
-
-  func removeAllCardAnimations(_ cardStack: SwipeCardStack) {
-    cardStack.visibleCards.forEach { $0.card.removeAllAnimations() }
-  }
-
-  // MARK: - Animation Keyframes
-
-  func addCancelSwipeAnimationKeyFrames(_ cardStack: SwipeCardStack) {
-    for (position, card) in cardStack.backgroundCards.enumerated() {
-      let transform = cardStack.transform(forCardAtPosition: position + 1)
-      Animator.addTransformKeyFrame(to: card, transform: transform)
-    }
-  }
-
-  func addShiftAnimationKeyFrames(_ cardStack: SwipeCardStack) {
-    for (position, value) in cardStack.visibleCards.enumerated() {
-      let transform = cardStack.transform(forCardAtPosition: position)
-      Animator.addTransformKeyFrame(to: value.card, transform: transform)
-    }
-  }
-
-  func addSwipeAnimationKeyFrames(_ cardStack: SwipeCardStack) {
-    for (position, value) in cardStack.visibleCards.enumerated() {
-      Animator.addKeyFrame {
-        cardStack.layoutCard(value.card, at: position)
-      }
-    }
-  }
-
-  func addUndoAnimationKeyFrames(_ cardStack: SwipeCardStack) {
-    for (position, card) in cardStack.backgroundCards.enumerated() {
-      Animator.addKeyFrame {
-        cardStack.layoutCard(card, at: position + 1)
-      }
-    }
-  }
-
-  // MARK: - Animation Calculations
-
-  func resetDuration(_ cardStack: SwipeCardStack, topCard: SwipeCard) -> TimeInterval {
-    return cardStack.animationOptions.resetDuration
-      ??  topCard.animationOptions.totalResetDuration / 2
-  }
-
-  func shiftDuration(_ cardStack: SwipeCardStack) -> TimeInterval {
-    return cardStack.animationOptions.shiftDuration
-  }
-
-  func swipeDelay(for topCard: SwipeCard, forced: Bool) -> TimeInterval {
-    let duration = topCard.animationOptions.totalSwipeDuration
-    let relativeOverlayDuration = topCard.animationOptions.relativeSwipeOverlayFadeDuration
-    let delay = duration * TimeInterval(relativeOverlayDuration)
-    return forced ? delay : 0
-  }
-
-  func swipeDuration(_ cardStack: SwipeCardStack,
+    
+    /// 撤销动画
+    /// - Parameters:
+    ///   - cardStack: SwipeCardStack
+    ///   - topCard: SwipeCard
+    ///   - animated: animated
+    ///   - completion: completion
+    func animateUndo(_ cardStack: SwipeCardStack,
                      topCard: SwipeCard,
-                     direction: SwipeDirection,
-                     forced: Bool) -> TimeInterval {
-    if let swipeDuration = cardStack.animationOptions.swipeDuration {
-      return swipeDuration
+                     animated: Bool,
+                     completion: ((Bool) -> Void)?) {
+        removeBackgroundCardAnimations(cardStack)
+        
+        if !animated {
+            for (position, card) in cardStack.backgroundCards.enumerated() {
+                cardStack.layoutCard(card, at: position + 1)
+            }
+            completion?(true)
+            return
+        }
+        
+        // 将背景卡放在旧的位置
+        for (position, card) in cardStack.backgroundCards.enumerated() {
+            card.transform = cardStack.transform(forCardAtPosition: position)
+        }
+        
+        // 动画背景卡到新的位置
+        Animator.animateKeyFrames(withDuration: undoDuration(cardStack, topCard: topCard),
+                                  animations: { [weak self] in
+                                    self?.addUndoAnimationKeyFrames(cardStack) },
+                                  completion: completion)
     }
-
-    if forced {
-      return topCard.animationOptions.totalSwipeDuration / 2
+    
+    /// 移除所有卡片动画
+    /// - Parameter cardStack: SwipeCardStack
+    func removeBackgroundCardAnimations(_ cardStack: SwipeCardStack) {
+        cardStack.backgroundCards.forEach { $0.removeAllAnimations() }
     }
-
-    let velocityFactor = topCard.dragSpeed(on: direction) / topCard.minimumSwipeSpeed(on: direction)
-
-    // card swiped below the minimum swipe speed
-    if velocityFactor < 1.0 {
-      return topCard.animationOptions.totalSwipeDuration / 2
+    
+    /// 移除背景卡片动画
+    /// - Parameter cardStack: SwipeCardStack
+    func removeAllCardAnimations(_ cardStack: SwipeCardStack) {
+        cardStack.visibleCards.forEach { $0.card.removeAllAnimations() }
     }
-
-    // card swiped at least the minimum swipe speed -> return relative duration
-    return 1.0 / (2.0 * TimeInterval(velocityFactor))
-  }
-
-  func undoDuration(_ cardStack: SwipeCardStack, topCard: SwipeCard) -> TimeInterval {
-    return cardStack.animationOptions.undoDuration
-      ?? topCard.animationOptions.totalReverseSwipeDuration / 2
-  }
+    
+    
+    
+    // MARK: - Animation Keyframes
+    func addCancelSwipeAnimationKeyFrames(_ cardStack: SwipeCardStack) {
+        for (position, card) in cardStack.backgroundCards.enumerated() {
+            let transform = cardStack.transform(forCardAtPosition: position + 1)
+            Animator.addTransformKeyFrame(to: card, transform: transform)
+        }
+    }
+    
+    func addShiftAnimationKeyFrames(_ cardStack: SwipeCardStack) {
+        for (position, value) in cardStack.visibleCards.enumerated() {
+            let transform = cardStack.transform(forCardAtPosition: position)
+            Animator.addTransformKeyFrame(to: value.card, transform: transform)
+        }
+    }
+    
+    func addSwipeAnimationKeyFrames(_ cardStack: SwipeCardStack) {
+        for (position, value) in cardStack.visibleCards.enumerated() {
+            Animator.addKeyFrame {
+                cardStack.layoutCard(value.card, at: position)
+            }
+        }
+    }
+    
+    func addUndoAnimationKeyFrames(_ cardStack: SwipeCardStack) {
+        for (position, card) in cardStack.backgroundCards.enumerated() {
+            Animator.addKeyFrame {
+                cardStack.layoutCard(card, at: position + 1)
+            }
+        }
+    }
+    
+    // MARK: - Animation Calculations
+    func resetDuration(_ cardStack: SwipeCardStack, topCard: SwipeCard) -> TimeInterval {
+        return cardStack.animationOptions.resetDuration
+            ??  topCard.animationOptions.totalResetDuration / 2
+    }
+    
+    func shiftDuration(_ cardStack: SwipeCardStack) -> TimeInterval {
+        return cardStack.animationOptions.shiftDuration
+    }
+    
+    func swipeDelay(for topCard: SwipeCard, forced: Bool) -> TimeInterval {
+        let duration = topCard.animationOptions.totalSwipeDuration
+        let relativeOverlayDuration = topCard.animationOptions.relativeSwipeOverlayFadeDuration
+        let delay = duration * TimeInterval(relativeOverlayDuration)
+        return forced ? delay : 0
+    }
+    
+    func swipeDuration(_ cardStack: SwipeCardStack,
+                       topCard: SwipeCard,
+                       direction: SwipeDirection,
+                       forced: Bool) -> TimeInterval {
+        if let swipeDuration = cardStack.animationOptions.swipeDuration {
+            return swipeDuration
+        }
+        
+        if forced {
+            return topCard.animationOptions.totalSwipeDuration / 2
+        }
+        
+        let velocityFactor = topCard.dragSpeed(on: direction) / topCard.minimumSwipeSpeed(on: direction)
+        
+        // 刷卡低于最低刷卡速度
+        if velocityFactor < 1.0 {
+            return topCard.animationOptions.totalSwipeDuration / 2
+        }
+        
+        // 刷卡的最低刷卡速度->返回相对持续时间
+        return 1.0 / (2.0 * TimeInterval(velocityFactor))
+    }
+    
+    func undoDuration(_ cardStack: SwipeCardStack, topCard: SwipeCard) -> TimeInterval {
+        return cardStack.animationOptions.undoDuration
+            ?? topCard.animationOptions.totalReverseSwipeDuration / 2
+    }
 }

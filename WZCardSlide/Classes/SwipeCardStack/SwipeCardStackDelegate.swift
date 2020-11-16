@@ -1,40 +1,64 @@
-///
-/// MIT License
-///
-/// Copyright (c) 2020 Mac Gallagher
-///
-/// Permission is hereby granted, free of charge, to any person obtaining a copy
-/// of this software and associated documentation files (the "Software"), to deal
-/// in the Software without restriction, including without limitation the rights
-/// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-/// copies of the Software, and to permit persons to whom the Software is
-/// furnished to do so, subject to the following conditions:
-///
-/// The above copyright notice and this permission notice shall be included in all
-/// copies or substantial portions of the Software.
-///
-/// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-/// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-/// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-/// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-/// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-/// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-/// SOFTWARE.
-///
+//
+//  SwipeCardStackDelegate.swift
+//  CardView
+//
+//  Created by xiaobin liu on 2020/10/4.
+//  Copyright © 2020 我主良缘. All rights reserved.
+//
 
 import Foundation
 
-@objc public protocol SwipeCardStackDelegate: AnyObject {
 
-  @objc
-  optional func cardStack(_ cardStack: SwipeCardStack, didSelectCardAt index: Int)
+/// MARK - 卡栈视图委托
+public protocol SwipeCardStackDelegate: AnyObject {
+    
+    
+    /// 卡片开始动画
+    /// - Parameter cardStack: SwipeCardStack
+    func cardStackDidBeginAnimating(_ cardStack: SwipeCardStack)
+    
+    
+    /// 卡片动画结束
+    /// - Parameter cardStack: SwipeCardStack
+    func cardStackDidEndAnimating(_ cardStack: SwipeCardStack)
+    
+    
+    /// 选中当前卡片
+    /// - Parameters:
+    ///   - cardStack: SwipeCardStack
+    ///   - index: 索引
+   func cardStack(_ cardStack: SwipeCardStack, didSelectCardAt index: Int)
+    
+    
+    
+    ///  卡片移除完成
+    /// - Parameters:
+    ///   - cardStack: SwipeCardStack
+    ///   - index: index
+    ///   - direction: direction
+    func cardStack(_ cardStack: SwipeCardStack, didSwipeCardAt index: Int, with direction: SwipeDirection)
+    
+    
+    /// 卡片恢复完成委托
+    /// - Parameters:
+    ///   - cardStack: SwipeCardStack
+    ///   - index: index
+    ///   - direction: direction
+    func cardStack(_ cardStack: SwipeCardStack, didUndoCardAt index: Int, from direction: SwipeDirection)
+    
+    
+    /// 所有卡片移除
+    /// - Parameter cardStack: SwipeCardStack
+    func didSwipeAllCards(_ cardStack: SwipeCardStack)
+}
 
-  @objc
-  optional func cardStack(_ cardStack: SwipeCardStack, didSwipeCardAt index: Int, with direction: SwipeDirection)
-
-  @objc
-  optional func cardStack(_ cardStack: SwipeCardStack, didUndoCardAt index: Int, from direction: SwipeDirection)
-
-  @objc
-  optional func didSwipeAllCards(_ cardStack: SwipeCardStack)
+/// MARK - SwipeCardStackDelegate
+extension SwipeCardStackDelegate {
+    
+    func cardStackDidBeginAnimating(_ cardStack: SwipeCardStack) {}
+    func cardStackDidEndAnimating(_ cardStack: SwipeCardStack) {}
+    func cardStack(_ cardStack: SwipeCardStack, didSelectCardAt index: Int) {}
+    func cardStack(_ cardStack: SwipeCardStack, didSwipeCardAt index: Int, with direction: SwipeDirection) {}
+    func cardStack(_ cardStack: SwipeCardStack, didUndoCardAt index: Int, from direction: SwipeDirection) {}
+    func didSwipeAllCards(_ cardStack: SwipeCardStack) {}
 }

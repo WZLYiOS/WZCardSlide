@@ -12,7 +12,6 @@
 		10B6E2A3F5F2F1D91CEA6A7065A8A65B /* PanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB9C5B6F6BBA524798627CBBA823109 /* PanGestureRecognizer.swift */; };
 		10DAF6E6CA7DA5DF10C69634251C3FE1 /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF6DE4911E585127FBD70D6BFB37C58 /* SwipeDirection.swift */; };
 		11E2E59F246021470A9DD2C50992CF08 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736F3D29CA084241D3386DD8242778A /* Animator.swift */; };
-		17353437ECE9909B2F43A25BFB6A949F /* Pods-WZCardSlide_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A75CCCECC9D91AE4B7618B58B73CDC5B /* Pods-WZCardSlide_Example-dummy.m */; };
 		2338F22C40B804B37E76250984609C90 /* SwipeCardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6062F113CDDEB6452E30BC6C25084C7C /* SwipeCardStack.swift */; };
 		2632CF3655D8D306DDC4D904AFC4DB83 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0DAAFCF4DC350E9C14CB228D98308C /* StringUtils.swift */; };
 		2B5D1D853494BCB033F61EB0A6880BB5 /* CardStackAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A88F2CBAF30B06E9453D300AA5975F8 /* CardStackAnimator.swift */; };
@@ -20,8 +19,8 @@
 		3DCA149202E42F5CC8E31B58AB2EF4CB /* CardTransformProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57993FD32D645C157F59894BDC987B7B /* CardTransformProvider.swift */; };
 		3F0343753BF75DA48B35D3CC8390D939 /* CardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C32419EFFEB0CD3BA94877729FECDD /* CardAnimator.swift */; };
 		450B0C95A9FDBE8DFA8202D7DD85DE72 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B93C377593995054C1CCE50CA88ECD1 /* Array+Extensions.swift */; };
-		46CC82C4494EDBA1AA1854C70EAB55A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		48A40B90CBE2EB20600A169E3993A425 /* CardStackStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE1956385C8658AA701C58632B38162 /* CardStackStateManager.swift */; };
+		57780DEAB93869A2A09D084F35689223 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		58EA002E167192421902BDF88BB18A71 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F821C9D5769635BA15AD0F79583393 /* UIView+Extensions.swift */; };
 		6A953374E04E101DB093B3EBE0B9175E /* CardLayoutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC55DF880D78F37821FBEB3437B62A2 /* CardLayoutProvider.swift */; };
 		83050704652AA63D6579B78517906BB1 /* CardAnimationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3C0325A52EBC2DBC14D77E0D214EF /* CardAnimationOptions.swift */; };
@@ -29,18 +28,19 @@
 		9693C89E48AF6D11CBAA770B9D759201 /* WZCardSlide-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E47857C933364FF964D7C073D816F22 /* WZCardSlide-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B887A41E8BBEA44EF5F811D16337E81E /* SwipeCardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD777C3B72DDB1291C83E30E29205F39 /* SwipeCardDelegate.swift */; };
 		C1CF0F43AC1ABE1286C17F6C5961D96D /* WZCardSlide-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D24D622A43EF20EB0BEE6D5CEBF1E32A /* WZCardSlide-dummy.m */; };
-		C4D0823999DC512A1992F3D193DC5BE1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		D8E556147F1CAD6D10C28EDDE1FFB5EC /* CardStackAnimationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBAD651501F2A717AB469E29CFF9B41 /* CardStackAnimationOptions.swift */; };
 		DEFF0ABFAF80B0F9DCC97CEC96B2AFFC /* CGVector+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6942C452A0CCE7671355FFD0AA9572 /* CGVector+Extensions.swift */; };
 		E4C39CDCD1BBD2441B2FE7BD0243ABD5 /* CardStackTransformProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711B662B787B708BB331F5EC9E52E3E /* CardStackTransformProvider.swift */; };
 		E6F4F6E33E3A4A58AB4B831FEC7222ED /* SwipeCardStackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38D782B22A985C907FA184E909D3C0B /* SwipeCardStackDelegate.swift */; };
+		EA4E6E705E9A4E60F5A68FD6B6DF45C8 /* Pods-WZCardSlide_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 224DBD20CC0BB55A27AB610CB93EF2E7 /* Pods-WZCardSlide_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECFDA0928ABA7BAF1493D31F53468C76 /* Pods-WZCardSlide_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A75CCCECC9D91AE4B7618B58B73CDC5B /* Pods-WZCardSlide_Example-dummy.m */; };
 		F16350A3F05AFC955E2845BC6D2CFC57 /* CardStackLayoutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEDDD5BFDCAC9A615C8BF81CCBED163 /* CardStackLayoutProvider.swift */; };
-		FF0652F2EEF34BC6265C700F241D8923 /* Pods-WZCardSlide_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 224DBD20CC0BB55A27AB610CB93EF2E7 /* Pods-WZCardSlide_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDFC32ABBCCA839143B0C445BC4BE92D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		FFCDE30732D33B05D78BBC901C1B4540 /* TapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704B1BC2CC342FD148BE60F92DBDF58D /* TapGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B342B33A8B1042B632A8DB0E65F02194 /* PBXContainerItemProxy */ = {
+		7AF692519AAD24470931876C7CA60B51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -50,7 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0680AF9A0CC833A8F825ED99F5BF4949 /* WZCardSlide.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WZCardSlide.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0680AF9A0CC833A8F825ED99F5BF4949 /* WZCardSlide.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WZCardSlide.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0711B662B787B708BB331F5EC9E52E3E /* CardStackTransformProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardStackTransformProvider.swift; sourceTree = "<group>"; };
 		0D349DE92B4DE463598BF6F5B11FF738 /* WZCardSlide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZCardSlide.debug.xcconfig; sourceTree = "<group>"; };
 		0E47857C933364FF964D7C073D816F22 /* WZCardSlide-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZCardSlide-umbrella.h"; sourceTree = "<group>"; };
@@ -59,9 +59,8 @@
 		1C6942C452A0CCE7671355FFD0AA9572 /* CGVector+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGVector+Extensions.swift"; sourceTree = "<group>"; };
 		224DBD20CC0BB55A27AB610CB93EF2E7 /* Pods-WZCardSlide_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WZCardSlide_Example-umbrella.h"; sourceTree = "<group>"; };
 		2AC55DF880D78F37821FBEB3437B62A2 /* CardLayoutProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardLayoutProvider.swift; sourceTree = "<group>"; };
-		302946F7BAE9A8A9B134906B5D88F799 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3A4A6716F913D82342DC3B6127A542C8 /* Pods_WZCardSlide_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WZCardSlide_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		302946F7BAE9A8A9B134906B5D88F799 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3A4A6716F913D82342DC3B6127A542C8 /* Pods_WZCardSlide_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WZCardSlide_Example.framework; path = "Pods-WZCardSlide_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A3F6895DEAC70E0811AEBE833018ADC /* Pods-WZCardSlide_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WZCardSlide_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		4FBAD651501F2A717AB469E29CFF9B41 /* CardStackAnimationOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardStackAnimationOptions.swift; sourceTree = "<group>"; };
 		50F821C9D5769635BA15AD0F79583393 /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -76,19 +75,20 @@
 		6B0DAAFCF4DC350E9C14CB228D98308C /* StringUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		6B93C377593995054C1CCE50CA88ECD1 /* Array+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		704B1BC2CC342FD148BE60F92DBDF58D /* TapGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TapGestureRecognizer.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7A88F2CBAF30B06E9453D300AA5975F8 /* CardStackAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardStackAnimator.swift; sourceTree = "<group>"; };
 		888C7ADBC556928DD556AA916EFEA6A2 /* WZCardSlide-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZCardSlide-prefix.pch"; sourceTree = "<group>"; };
 		9202BF6A1E46EE2A5BA11A31EB7E8AE2 /* WZCardSlide-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WZCardSlide-Info.plist"; sourceTree = "<group>"; };
 		98B1A0241E770FB0150E78B12401C207 /* Pods-WZCardSlide_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WZCardSlide_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A75CCCECC9D91AE4B7618B58B73CDC5B /* Pods-WZCardSlide_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WZCardSlide_Example-dummy.m"; sourceTree = "<group>"; };
 		AD777C3B72DDB1291C83E30E29205F39 /* SwipeCardDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwipeCardDelegate.swift; sourceTree = "<group>"; };
 		C04520896F1B06CC61A1789F678DE2F1 /* SwipeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 		C38D782B22A985C907FA184E909D3C0B /* SwipeCardStackDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwipeCardStackDelegate.swift; sourceTree = "<group>"; };
 		C4A3C0325A52EBC2DBC14D77E0D214EF /* CardAnimationOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardAnimationOptions.swift; sourceTree = "<group>"; };
-		C5E7243AE67F981459BCCE94F6883A64 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C5E7243AE67F981459BCCE94F6883A64 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		C6832538F27AD597ED3C6DAEE973DB90 /* SwipeCardStackDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwipeCardStackDataSource.swift; sourceTree = "<group>"; };
-		C70D7DCF4D7229F77292ACEA1675DE22 /* WZCardSlide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WZCardSlide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70D7DCF4D7229F77292ACEA1675DE22 /* WZCardSlide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WZCardSlide.framework; path = WZCardSlide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA8F018F796BF112EF91342070EA77EF /* WZCardSlide.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WZCardSlide.modulemap; sourceTree = "<group>"; };
 		D24D622A43EF20EB0BEE6D5CEBF1E32A /* WZCardSlide-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WZCardSlide-dummy.m"; sourceTree = "<group>"; };
 		DDEDDD5BFDCAC9A615C8BF81CCBED163 /* CardStackLayoutProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardStackLayoutProvider.swift; sourceTree = "<group>"; };
@@ -99,11 +99,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7DC181D0C4EC6F6AF136C971B0C5B016 /* Frameworks */ = {
+		2C4802ADA028F1B5E8EF885B36D6AC47 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4D0823999DC512A1992F3D193DC5BE1 /* Foundation.framework in Frameworks */,
+				57780DEAB93869A2A09D084F35689223 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,13 +111,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46CC82C4494EDBA1AA1854C70EAB55A4 /* Foundation.framework in Frameworks */,
+				FDFC32ABBCCA839143B0C445BC4BE92D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		79CEE30D4AD416A8ADC7B5FFFBF2AF8F /* Pods-WZCardSlide_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,14 +198,6 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		CD3102B37C58618A9251AC2989A704B9 /* SwipeCard */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,7 +227,7 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -275,11 +275,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0121624A0351069F26B695BB5B684029 /* Headers */ = {
+		0D7CF274B554B1514FF2B1B6948E6B0C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF0652F2EEF34BC6265C700F241D8923 /* Pods-WZCardSlide_Example-umbrella.h in Headers */,
+				EA4E6E705E9A4E60F5A68FD6B6DF45C8 /* Pods-WZCardSlide_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,17 +314,17 @@
 		};
 		E2A40252773780C4ADE79D40147E39FF /* Pods-WZCardSlide_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 96D2340DB832E026139114D127E17476 /* Build configuration list for PBXNativeTarget "Pods-WZCardSlide_Example" */;
+			buildConfigurationList = B8A6076367321D8AC4980DB4B6439539 /* Build configuration list for PBXNativeTarget "Pods-WZCardSlide_Example" */;
 			buildPhases = (
-				0121624A0351069F26B695BB5B684029 /* Headers */,
-				26255BB59C8D70B03FD6A1ED948B67AD /* Sources */,
-				7DC181D0C4EC6F6AF136C971B0C5B016 /* Frameworks */,
-				69C8AD369E947AF8EF20D2A528D6726E /* Resources */,
+				0D7CF274B554B1514FF2B1B6948E6B0C /* Headers */,
+				00DC2F1391828B8F0464B1B7C3CF2A50 /* Sources */,
+				2C4802ADA028F1B5E8EF885B36D6AC47 /* Frameworks */,
+				75FD93732432EF2778760EF908CEF5BC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9D90683C918D6E1D9315EF210185CBF3 /* PBXTargetDependency */,
+				0467CCC0D0D8817D623C53FB9AD2772A /* PBXTargetDependency */,
 			);
 			name = "Pods-WZCardSlide_Example";
 			productName = "Pods-WZCardSlide_Example";
@@ -338,7 +338,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -367,7 +367,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69C8AD369E947AF8EF20D2A528D6726E /* Resources */ = {
+		75FD93732432EF2778760EF908CEF5BC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -377,11 +377,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		26255BB59C8D70B03FD6A1ED948B67AD /* Sources */ = {
+		00DC2F1391828B8F0464B1B7C3CF2A50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17353437ECE9909B2F43A25BFB6A949F /* Pods-WZCardSlide_Example-dummy.m in Sources */,
+				ECFDA0928ABA7BAF1493D31F53468C76 /* Pods-WZCardSlide_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,19 +420,54 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9D90683C918D6E1D9315EF210185CBF3 /* PBXTargetDependency */ = {
+		0467CCC0D0D8817D623C53FB9AD2772A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WZCardSlide;
 			target = 15A4F3E36762EB251299C73615564215 /* WZCardSlide */;
-			targetProxy = B342B33A8B1042B632A8DB0E65F02194 /* PBXContainerItemProxy */;
+			targetProxy = 7AF692519AAD24470931876C7CA60B51 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		131356BE54884448CA49C07BEDF4BB2A /* Debug */ = {
+		06156B71326D655E00EB61B810D9C9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5225F33BE2743CAB3042AD0DD08A1572 /* WZCardSlide.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WZCardSlide/WZCardSlide-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WZCardSlide/WZCardSlide-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/WZCardSlide/WZCardSlide.modulemap";
+				PRODUCT_MODULE_NAME = WZCardSlide;
+				PRODUCT_NAME = WZCardSlide;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -494,80 +529,13 @@
 			};
 			name = Debug;
 		};
-		2F942BAB0A4F0FD2A79C2A82B7AEB8B8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D349DE92B4DE463598BF6F5B11FF738 /* WZCardSlide.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WZCardSlide/WZCardSlide-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WZCardSlide/WZCardSlide-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/WZCardSlide/WZCardSlide.modulemap";
-				PRODUCT_MODULE_NAME = WZCardSlide;
-				PRODUCT_NAME = WZCardSlide;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		53A64FA24973E6FD35455BF1525A6AFB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCA47BC4496BE4E3C0AF082BE1921EB1 /* Pods-WZCardSlide_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WZCardSlide_Example/Pods-WZCardSlide_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WZCardSlide_Example/Pods-WZCardSlide_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7C932848ACB08B621F386FC03B09C91C /* Release */ = {
+		58E655E3E9B3E78427E384B202DF4189 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5C469564B7176F94A6C370D70C87E608 /* Pods-WZCardSlide_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -596,44 +564,11 @@
 			};
 			name = Release;
 		};
-		98116CB59EB429DCC9C03987D7127039 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5225F33BE2743CAB3042AD0DD08A1572 /* WZCardSlide.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WZCardSlide/WZCardSlide-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WZCardSlide/WZCardSlide-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/WZCardSlide/WZCardSlide.modulemap";
-				PRODUCT_MODULE_NAME = WZCardSlide;
-				PRODUCT_NAME = WZCardSlide;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F090CD07A80273D5A73C8EA19224ADDB /* Release */ = {
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -684,11 +619,79 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		71006FFF5330687E1948AAFB2B26F619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D349DE92B4DE463598BF6F5B11FF738 /* WZCardSlide.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WZCardSlide/WZCardSlide-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WZCardSlide/WZCardSlide-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/WZCardSlide/WZCardSlide.modulemap";
+				PRODUCT_MODULE_NAME = WZCardSlide;
+				PRODUCT_NAME = WZCardSlide;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		93A133607B89D31FE0C5D89CB851692D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCA47BC4496BE4E3C0AF082BE1921EB1 /* Pods-WZCardSlide_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WZCardSlide_Example/Pods-WZCardSlide_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WZCardSlide_Example/Pods-WZCardSlide_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -696,17 +699,17 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				131356BE54884448CA49C07BEDF4BB2A /* Debug */,
-				F090CD07A80273D5A73C8EA19224ADDB /* Release */,
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		96D2340DB832E026139114D127E17476 /* Build configuration list for PBXNativeTarget "Pods-WZCardSlide_Example" */ = {
+		B8A6076367321D8AC4980DB4B6439539 /* Build configuration list for PBXNativeTarget "Pods-WZCardSlide_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				53A64FA24973E6FD35455BF1525A6AFB /* Debug */,
-				7C932848ACB08B621F386FC03B09C91C /* Release */,
+				93A133607B89D31FE0C5D89CB851692D /* Debug */,
+				58E655E3E9B3E78427E384B202DF4189 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -714,8 +717,8 @@
 		C0FB99CCDC6571DA1C6DD529CF003701 /* Build configuration list for PBXNativeTarget "WZCardSlide" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F942BAB0A4F0FD2A79C2A82B7AEB8B8 /* Debug */,
-				98116CB59EB429DCC9C03987D7127039 /* Release */,
+				71006FFF5330687E1948AAFB2B26F619 /* Debug */,
+				06156B71326D655E00EB61B810D9C9F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
