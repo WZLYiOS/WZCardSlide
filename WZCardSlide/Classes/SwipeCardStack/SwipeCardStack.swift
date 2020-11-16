@@ -53,7 +53,7 @@ open class SwipeCardStack: UIView, SwipeCardDelegate, UIGestureRecognizerDelegat
     public var isScale: Bool = true
     
     /// 可视数量
-    var numberOfVisibleCards: Int = 2
+    public var numberOfVisibleCards: Int = 2
     
     
     /// 可视卡片数组
