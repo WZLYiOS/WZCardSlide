@@ -22,5 +22,5 @@ public protocol SwipeCardStackDataSource: AnyObject {
     /// - Parameters:
     ///   - cardStack: SwipeCardStack
     ///   - index: 索引
-  func cardStack(_ cardStack: SwipeCardStack, cardForIndexAt index: Int) -> SwipeCard
+    func cardStack(_ cardStack: SwipeCardStack, cardForIndexAt index: Int) -> SwipeCard
 }

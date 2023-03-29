@@ -57,25 +57,25 @@ open class SwipeCardStack: UIView, SwipeCardDelegate, UIGestureRecognizerDelegat
     
     
     /// 可视卡片数组
-    var visibleCards: [Card] = []
+    private(set) var visibleCards: [Card] = []
     
     /// 顶部卡片
-    var topCard: SwipeCard? {
+    public var topCard: SwipeCard? {
         return visibleCards.first?.card
     }
     
     ///  背景卡片
-    var backgroundCards: [SwipeCard] {
+    public var backgroundCards: [SwipeCard] {
         return Array(visibleCards.dropFirst()).map { $0.card }
     }
     
     /// 是否启用
-    var isEnabled: Bool {
+    public var isEnabled: Bool {
         return !isAnimating && (topCard?.isUserInteractionEnabled ?? true)
     }
     
     /// 是否动画中
-    var isAnimating: Bool = false
+    public var isAnimating: Bool = false
     
     /// 卡片堆栈的背景卡片动画器
     private var animator: CardStackAnimatable = CardStackAnimator()
