@@ -13,7 +13,7 @@ import UIKit
 open class SwipeCardStack: UIView, SwipeCardDelegate, UIGestureRecognizerDelegate {
     
     /// Card实体
-    struct Card {
+    public struct Card {
         var index: Int
         var card: SwipeCard
     }
@@ -57,8 +57,8 @@ open class SwipeCardStack: UIView, SwipeCardDelegate, UIGestureRecognizerDelegat
     
     
     /// 可视卡片数组
-    private(set) var visibleCards: [Card] = []
-    
+    public private(set) var visibleCards: [Card] = []
+     
     /// 顶部卡片
     public var topCard: SwipeCard? {
         return visibleCards.first?.card
@@ -75,7 +75,7 @@ open class SwipeCardStack: UIView, SwipeCardDelegate, UIGestureRecognizerDelegat
     }
     
     /// 是否动画中
-    public var isAnimating: Bool = false
+    public private(set) var isAnimating: Bool = false
     
     /// 卡片堆栈的背景卡片动画器
     private var animator: CardStackAnimatable = CardStackAnimator()
