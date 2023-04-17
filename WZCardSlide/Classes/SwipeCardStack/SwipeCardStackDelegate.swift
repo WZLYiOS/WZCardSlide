@@ -15,7 +15,7 @@ public protocol SwipeCardStackDelegate: AnyObject {
     
     /// 卡片开始动画
     /// - Parameter cardStack: SwipeCardStack
-    func cardStackDidBeginAnimating(_ cardStack: SwipeCardStack)
+    func cardStackDidBeginAnimating(_ cardStack: SwipeCardStack, didSelectCardAt index: Int)
     
     
     /// 卡片动画结束

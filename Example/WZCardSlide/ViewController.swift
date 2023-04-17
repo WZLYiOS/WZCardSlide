@@ -69,12 +69,12 @@ extension ViewController: SwipeCardStackDataSource {
 
 /// MARK - SwipeCardStackDelegate
 extension ViewController: SwipeCardStackDelegate {
-    func didSwipeAllCards(_ cardStack: WZCardSlide.SwipeCardStack) {
+    func cardStackDidBeginAnimating(_ cardStack: WZCardSlide.SwipeCardStack, didSelectCardAt index: Int) {
         
     }
     
-    func cardStackDidBeginAnimating(_ cardStack: WZCardSlide.SwipeCardStack) {
-       
+    func didSwipeAllCards(_ cardStack: WZCardSlide.SwipeCardStack) {
+        
     }
     
     func cardStackDidEndAnimating(_ cardStack: WZCardSlide.SwipeCardStack) {

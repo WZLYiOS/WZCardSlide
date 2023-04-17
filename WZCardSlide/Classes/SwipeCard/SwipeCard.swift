@@ -144,8 +144,7 @@ open class SwipeCard: SwipeView {
     
     override open func beginSwiping(_ recognizer: UIPanGestureRecognizer) {
         super.beginSwiping(recognizer)
-        
-        if delegate?.card(isCanMove: self) == false { return }
+    
         internalTouchLocation = recognizer.location(in: self)
         delegate?.card(didBeginSwipe: self)
         animator.removeAllAnimations(on: self)
