@@ -42,4 +42,8 @@ protocol SwipeCardDelegate: AnyObject {
     /// 点击卡片
     /// - Parameter card: SwipeCard
     func card(didTap card: SwipeCard)
+    
+    /// 卡片是否可以移动
+    /// - Parameter card: SwipeCard
+    func card(isCanMove card: SwipeCard) -> Bool
 }

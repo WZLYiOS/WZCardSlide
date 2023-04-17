@@ -50,6 +50,10 @@ public protocol SwipeCardStackDelegate: AnyObject {
     /// 所有卡片移除
     /// - Parameter cardStack: SwipeCardStack
     func didSwipeAllCards(_ cardStack: SwipeCardStack)
+    
+    /// 卡片是否可以移动
+    /// - Parameter cardStack: SwipeCardStack
+    func cardStackIsCanMove(_ cardStack: SwipeCardStack, didSwipeCardAt index: Int) -> Bool
 }
 
 /// MARK - SwipeCardStackDelegate

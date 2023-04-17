@@ -144,6 +144,8 @@ open class SwipeCard: SwipeView {
     
     override open func beginSwiping(_ recognizer: UIPanGestureRecognizer) {
         super.beginSwiping(recognizer)
+        
+        if delegate?.card(isCanMove: self) == false { return }
         internalTouchLocation = recognizer.location(in: self)
         delegate?.card(didBeginSwipe: self)
         animator.removeAllAnimations(on: self)
@@ -151,6 +153,8 @@ open class SwipeCard: SwipeView {
     
     override open func continueSwiping(_ recognizer: UIPanGestureRecognizer) {
         super.continueSwiping(recognizer)
+        
+        if delegate?.card(isCanMove: self) == false { return }
         delegate?.card(didContinueSwipe: self)
         
         transform = transformProvider.transform(for: self)
@@ -162,12 +166,17 @@ open class SwipeCard: SwipeView {
     
     override open func endSwiping(_ recognizer: UIPanGestureRecognizer) {
         super.endSwiping(recognizer)
+        
+        if delegate?.card(isCanMove: self) == false { return }
         delegate?.card(endSwiping: self)
     }
     
     override open func didSwipe(_ recognizer: UIPanGestureRecognizer,
                                 with direction: SwipeDirection) {
         super.didSwipe(recognizer, with: direction)
+        if delegate?.card(isCanMove: self) == false {
+            return
+        }
         delegate?.card(didSwipe: self, with: direction)
         swipeAction(direction: direction, forced: false)
     }

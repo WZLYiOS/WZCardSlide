@@ -11,7 +11,7 @@ import UIKit
 
 /// MARK - SwipeCardStack
 open class SwipeCardStack: UIView, SwipeCardDelegate, UIGestureRecognizerDelegate {
-    
+
     /// Card实体
     public struct Card {
         var index: Int
@@ -535,5 +535,10 @@ open class SwipeCardStack: UIView, SwipeCardDelegate, UIGestureRecognizerDelegat
     func card(didSwipe card: SwipeCard,
               with direction: SwipeDirection) {
         swipeAction(topCard: card, direction: direction, forced: false, animated: true)
+    }
+    
+    func card(isCanMove card: SwipeCard) -> Bool {
+        guard let swipedIndex = topCardIndex else { return false }
+        return delegate?.cardStackIsCanMove(self, didSwipeCardAt: swipedIndex) ?? true
     }
 }

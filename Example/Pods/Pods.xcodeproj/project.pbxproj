@@ -7,40 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05695B6E6B014DFF25A0B1F0B61F432E /* SwipeCardStackDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6832538F27AD597ED3C6DAEE973DB90 /* SwipeCardStackDataSource.swift */; };
-		05F14846149661E2AE74598823379D1E /* SwipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE87F776203C1173317BEB85942F44 /* SwipeCard.swift */; };
-		10B6E2A3F5F2F1D91CEA6A7065A8A65B /* PanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB9C5B6F6BBA524798627CBBA823109 /* PanGestureRecognizer.swift */; };
-		10DAF6E6CA7DA5DF10C69634251C3FE1 /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF6DE4911E585127FBD70D6BFB37C58 /* SwipeDirection.swift */; };
-		11E2E59F246021470A9DD2C50992CF08 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736F3D29CA084241D3386DD8242778A /* Animator.swift */; };
-		2338F22C40B804B37E76250984609C90 /* SwipeCardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6062F113CDDEB6452E30BC6C25084C7C /* SwipeCardStack.swift */; };
-		2632CF3655D8D306DDC4D904AFC4DB83 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0DAAFCF4DC350E9C14CB228D98308C /* StringUtils.swift */; };
-		2B5D1D853494BCB033F61EB0A6880BB5 /* CardStackAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A88F2CBAF30B06E9453D300AA5975F8 /* CardStackAnimator.swift */; };
-		34E0477782CA412ABF53925CFDF2DA75 /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A57E569C47454AF4C6185FFDA6E29B /* CGPoint+Extensions.swift */; };
-		3DCA149202E42F5CC8E31B58AB2EF4CB /* CardTransformProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57993FD32D645C157F59894BDC987B7B /* CardTransformProvider.swift */; };
-		3F0343753BF75DA48B35D3CC8390D939 /* CardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C32419EFFEB0CD3BA94877729FECDD /* CardAnimator.swift */; };
-		450B0C95A9FDBE8DFA8202D7DD85DE72 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B93C377593995054C1CCE50CA88ECD1 /* Array+Extensions.swift */; };
-		48A40B90CBE2EB20600A169E3993A425 /* CardStackStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE1956385C8658AA701C58632B38162 /* CardStackStateManager.swift */; };
-		57780DEAB93869A2A09D084F35689223 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		58EA002E167192421902BDF88BB18A71 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F821C9D5769635BA15AD0F79583393 /* UIView+Extensions.swift */; };
-		6A953374E04E101DB093B3EBE0B9175E /* CardLayoutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC55DF880D78F37821FBEB3437B62A2 /* CardLayoutProvider.swift */; };
-		83050704652AA63D6579B78517906BB1 /* CardAnimationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3C0325A52EBC2DBC14D77E0D214EF /* CardAnimationOptions.swift */; };
-		951E9FF47E19A38ECC1CDA7A8ADDB1D8 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04520896F1B06CC61A1789F678DE2F1 /* SwipeView.swift */; };
-		9693C89E48AF6D11CBAA770B9D759201 /* WZCardSlide-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E47857C933364FF964D7C073D816F22 /* WZCardSlide-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B887A41E8BBEA44EF5F811D16337E81E /* SwipeCardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD777C3B72DDB1291C83E30E29205F39 /* SwipeCardDelegate.swift */; };
-		C1CF0F43AC1ABE1286C17F6C5961D96D /* WZCardSlide-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D24D622A43EF20EB0BEE6D5CEBF1E32A /* WZCardSlide-dummy.m */; };
-		D8E556147F1CAD6D10C28EDDE1FFB5EC /* CardStackAnimationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBAD651501F2A717AB469E29CFF9B41 /* CardStackAnimationOptions.swift */; };
-		DEFF0ABFAF80B0F9DCC97CEC96B2AFFC /* CGVector+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6942C452A0CCE7671355FFD0AA9572 /* CGVector+Extensions.swift */; };
-		E4C39CDCD1BBD2441B2FE7BD0243ABD5 /* CardStackTransformProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711B662B787B708BB331F5EC9E52E3E /* CardStackTransformProvider.swift */; };
-		E6F4F6E33E3A4A58AB4B831FEC7222ED /* SwipeCardStackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38D782B22A985C907FA184E909D3C0B /* SwipeCardStackDelegate.swift */; };
-		EA4E6E705E9A4E60F5A68FD6B6DF45C8 /* Pods-WZCardSlide_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 224DBD20CC0BB55A27AB610CB93EF2E7 /* Pods-WZCardSlide_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ECFDA0928ABA7BAF1493D31F53468C76 /* Pods-WZCardSlide_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A75CCCECC9D91AE4B7618B58B73CDC5B /* Pods-WZCardSlide_Example-dummy.m */; };
-		F16350A3F05AFC955E2845BC6D2CFC57 /* CardStackLayoutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEDDD5BFDCAC9A615C8BF81CCBED163 /* CardStackLayoutProvider.swift */; };
-		FDFC32ABBCCA839143B0C445BC4BE92D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		FFCDE30732D33B05D78BBC901C1B4540 /* TapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704B1BC2CC342FD148BE60F92DBDF58D /* TapGestureRecognizer.swift */; };
+		00A2749F46C967ED4725A32357E3FB1B /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA50A49AB14A27B030EF455D9943EB8B /* ConstraintLayoutSupport.swift */; };
+		04637C70546B34F93C3A1D79C3F78B37 /* ConstraintDirectionalInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC84DB0CD86A51B4B66E0450CBF40DE /* ConstraintDirectionalInsetTarget.swift */; };
+		0591132B5EA1BE4DDA268D8A9C3D0421 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A6A462E0F0B040B83C8763773533FE /* LayoutConstraint.swift */; };
+		06E43B4751069B47B3BD4AFD936A57E3 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57B4B15AAC3AB24B43306829FAA77A0 /* ConstraintPriority.swift */; };
+		0833E66E7F19849322305D67777B77DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0B994CDC79B1AD3A7BE62490D27C60C8 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2DCDFF2011C08759407B4E2038CA11 /* ConstraintAttributes.swift */; };
+		0FE1FE75079E10E6D2B6D7589236C26B /* CardStackAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A88F2CBAF30B06E9453D300AA5975F8 /* CardStackAnimator.swift */; };
+		183D8B3E057B885EA7DF9A8CDCCE9029 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8251A08ED8E6CF34420BBF858126F7 /* ConstraintMakerRelatable.swift */; };
+		19F83B7FC6E094BDB5A16C179781D199 /* PanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB9C5B6F6BBA524798627CBBA823109 /* PanGestureRecognizer.swift */; };
+		1A44ABC0CDC1E7F6BD2FA905F2A70710 /* SwipeCardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD777C3B72DDB1291C83E30E29205F39 /* SwipeCardDelegate.swift */; };
+		1B9EFDF355E6072BCF9FD55AB4D1862A /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736F3D29CA084241D3386DD8242778A /* Animator.swift */; };
+		220D6AC9B1B1EC8EFFB204F9C1EAC842 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57C38722D9F65992CF2200038C8651E /* ConstraintMakerEditable.swift */; };
+		2314695CF1B61B0B1EC4C5A5B5896FEA /* Pods-WZCardSlide_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DE1005E72143DDAB2D063D4B87F1AD3 /* Pods-WZCardSlide_Example-dummy.m */; };
+		256558233B40ACA6818F143BBC5B8017 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0072CC268C7456CC1DA6E8180975AB43 /* ConstraintViewDSL.swift */; };
+		2D85CB3B39C8E74B9F751B6FBB269613 /* CardStackLayoutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEDDD5BFDCAC9A615C8BF81CCBED163 /* CardStackLayoutProvider.swift */; };
+		2DC6351C5548BC67E049E24739F8584C /* SwipeCardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6062F113CDDEB6452E30BC6C25084C7C /* SwipeCardStack.swift */; };
+		3660B4F629053ABC3C1DF69366770289 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD101E65ADCCC341BCD3BFF777CA947C /* ConstraintConfig.swift */; };
+		38B9D58E94D9C1CECD7E381C64A2329D /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152EE8343B4F64CFDE73F65CEF14A13F /* UILayoutSupport+Extensions.swift */; };
+		3DCB719CE382C8C1FF6CFAF188585054 /* CardStackTransformProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0711B662B787B708BB331F5EC9E52E3E /* CardStackTransformProvider.swift */; };
+		402564CC886F5B58F9AD003E5F1B77F7 /* WZCardSlide-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D24D622A43EF20EB0BEE6D5CEBF1E32A /* WZCardSlide-dummy.m */; };
+		42B6ACFCF650183030867CB3EF345E95 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412D51A2BEEF78C262C4B3F3798D1702 /* ConstraintMakerFinalizable.swift */; };
+		43AF520995873E0161D50E366E87A24B /* CardStackStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE1956385C8658AA701C58632B38162 /* CardStackStateManager.swift */; };
+		4BAD99B7394E225CEDBF94B8100BCC7F /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E74C9EDB065D2E76B3EDCCB6E2153 /* ConstraintRelation.swift */; };
+		4DA72FD7F1FB2C0449EDEF4B8A579807 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7096225ED146E16EC168C99FEDD215B5 /* ConstraintPriorityTarget.swift */; };
+		5006089FA6D85A971731559077E570B8 /* TapGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704B1BC2CC342FD148BE60F92DBDF58D /* TapGestureRecognizer.swift */; };
+		5380454C48A12A6E376122ABD8096968 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A0BC61944B3E89515CACB83BB1B976 /* ConstraintDescription.swift */; };
+		55E51F45F1E157D3B4942BA7252C277E /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF34962F54DAA8DEB0A1D7D4F3FC09A /* ConstraintRelatableTarget.swift */; };
+		56A72F6D13D930C4A2568F24DEA33C8D /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5032FD34D5BB9A1F925C649B43CC02DC /* ConstraintLayoutSupportDSL.swift */; };
+		56AC6DC6459AE47E7BC4AF06E5B148D2 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02732995CB94C03CB83E1935B434AD74 /* ConstraintDSL.swift */; };
+		5D36B99F3CAB1FC7337082D9581FECA6 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE69DD3B611E4180FCBDD8CDE8814 /* Debugging.swift */; };
+		604D3C93C17978C23600EC415949AB64 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D52A60BF41010F680313572B051598 /* ConstraintInsets.swift */; };
+		611CEF7FF1EF9EA1BCEF6C73EEE3ACCF /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55D2A11C17BBCE3C9F7F0BA9555B5AE /* ConstraintLayoutGuide.swift */; };
+		69DE75BA185BBAB5FDAA28321F3C849F /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E5BB7E9F99F41E937A7E2CCEF178BE /* ConstraintItem.swift */; };
+		6AC1B881BB319C89AD023A02CDC8FC3D /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04B678C00268C9CF7E410145D6F78AA /* ConstraintLayoutGuide+Extensions.swift */; };
+		6E4B1EB37B8C106377868CB03196C334 /* CardLayoutProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC55DF880D78F37821FBEB3437B62A2 /* CardLayoutProvider.swift */; };
+		6EAC8B6FA2D115DE708A58C601DD25E1 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFDF096C3836F945945C9FFDB5090F5 /* Constraint.swift */; };
+		7286183F80A5D7E104E3D948552E746E /* CardTransformProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57993FD32D645C157F59894BDC987B7B /* CardTransformProvider.swift */; };
+		780C74FE977F3B1A2BB01AA614849142 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04520896F1B06CC61A1789F678DE2F1 /* SwipeView.swift */; };
+		84DB622904E8BD68721647C7027252F2 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0DAAFCF4DC350E9C14CB228D98308C /* StringUtils.swift */; };
+		8EDA4F1E22B84DAD586D085143C2AC4D /* CardStackAnimationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBAD651501F2A717AB469E29CFF9B41 /* CardStackAnimationOptions.swift */; };
+		95E194A3AABB5407231E898B6686F73E /* ConstraintMakerRelatable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583BBF75085D255E27A5F9EF9EC203A5 /* ConstraintMakerRelatable+Extensions.swift */; };
+		98F570DA48370453D648BD526FDAAEAA /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE15C12D4B2736CB1D1B07F4838FCA7 /* LayoutConstraintItem.swift */; };
+		9C9548E8B4675954566202F7B87FF0E6 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C282AEDFB53BD2F6B277738727FF116D /* ConstraintConstantTarget.swift */; };
+		9E02CFFEFE1BEC978B512286F03D31DA /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5693124BFA9269D2085EC1ADFAAD76 /* ConstraintInsetTarget.swift */; };
+		9ECF471B204BFCF3D3FC429085466110 /* SwipeCardStackDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6832538F27AD597ED3C6DAEE973DB90 /* SwipeCardStackDataSource.swift */; };
+		A03FDA8BC5741880B1EF11AFD248EF48 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751D5202E1F291CC13F7AE0CD669B831 /* ConstraintOffsetTarget.swift */; };
+		A3E3AB7C765C21AE17B1E6EE6560040C /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 932076048BB79360F50A76C2C738DFC8 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5A8BF973BFE9C9304372A26C9F2E35B /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFBBDB0D11D15EA3C0D640EF407F700 /* ConstraintMakerExtendable.swift */; };
+		A8C7A2441231266A3519C067EB2994E9 /* CardAnimationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A3C0325A52EBC2DBC14D77E0D214EF /* CardAnimationOptions.swift */; };
+		AA862453514742FF6BBC8CE662E1D35A /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B93C377593995054C1CCE50CA88ECD1 /* Array+Extensions.swift */; };
+		AEFCBBD98D2B88977878431D1C628C46 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F821C9D5769635BA15AD0F79583393 /* UIView+Extensions.swift */; };
+		B03B5579590D528CBA6D11FF638BC2AF /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960E2E91424D9428F311B73888D8E927 /* Typealiases.swift */; };
+		B11ADFD09AB34574249C704B4AD7789F /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A57E569C47454AF4C6185FFDA6E29B /* CGPoint+Extensions.swift */; };
+		B3185DA160F98E22567CD6C1B57EA810 /* WZCardSlide-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E47857C933364FF964D7C073D816F22 /* WZCardSlide-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B43017FEC99D227D4CDD81DD2C27D9D9 /* ConstraintMakerPrioritizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0A527ED8F0A719FF610D743A87DAD3 /* ConstraintMakerPrioritizable.swift */; };
+		B752F7C4BECB65894B1F49421049CE5F /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458867733779570F7398C76B46AEAF5E /* ConstraintView.swift */; };
+		BD47CB74CD9B2B4D2D942C9B65748DFB /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 143498449916D71708A8AF2F96E7320A /* SnapKit-dummy.m */; };
+		CB4333855C4E7B59E64D569A8DCE676B /* SwipeCardStackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38D782B22A985C907FA184E909D3C0B /* SwipeCardStackDelegate.swift */; };
+		CE6D8A737BC629ECD901664DBA15E024 /* Pods-WZCardSlide_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 070DAE4BD27050E5804ED444395C7DA9 /* Pods-WZCardSlide_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D335DBAB1AE2AFEC99EF30ED19E49786 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D6440843DDC685FE6B20E4C9D0CCAD4E /* SwipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CE87F776203C1173317BEB85942F44 /* SwipeCard.swift */; };
+		DC19B442EE878309E7C88A351285031D /* CardAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C32419EFFEB0CD3BA94877729FECDD /* CardAnimator.swift */; };
+		E64B3A97583F88791C498DD227CA308E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E98DC8FB2578E76A812E0C94BA10E1B1 /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8DFD8FEE78807F86F0544749C80450 /* ConstraintDirectionalInsets.swift */; };
+		EF21586EC3DFF6097A58EEC87376A0C1 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91F91B010D4991E838DAC578595BA7A /* ConstraintLayoutGuideDSL.swift */; };
+		F7C0960CEEB8F0C18F4503B405EAC08F /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00529F62152FE0E9A82AF6D8EAAAE2E1 /* ConstraintMultiplierTarget.swift */; };
+		F953AA9104BFE0C2DAD639EA60104A75 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83141A7BA266489296BCBEF99AC5412 /* ConstraintView+Extensions.swift */; };
+		FAB03959C2357E325B19E08BC4775DAB /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B3092297166519217A25AD70D5341 /* ConstraintMaker.swift */; };
+		FC308110B84D7960267FE623E3C426E9 /* SwipeDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF6DE4911E585127FBD70D6BFB37C58 /* SwipeDirection.swift */; };
+		FD2B95540ABD2220E6BC90904BF0BF8C /* CGVector+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6942C452A0CCE7671355FFD0AA9572 /* CGVector+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7AF692519AAD24470931876C7CA60B51 /* PBXContainerItemProxy */ = {
+		AB1778526F60BC71EEEEFF325BB25A1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+		E65A7B76DC5E1221069E4170FACBEB21 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -50,74 +97,153 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00529F62152FE0E9A82AF6D8EAAAE2E1 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Sources/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		0072CC268C7456CC1DA6E8180975AB43 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Sources/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		02732995CB94C03CB83E1935B434AD74 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Sources/ConstraintDSL.swift; sourceTree = "<group>"; };
 		0680AF9A0CC833A8F825ED99F5BF4949 /* WZCardSlide.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WZCardSlide.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		070DAE4BD27050E5804ED444395C7DA9 /* Pods-WZCardSlide_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WZCardSlide_Example-umbrella.h"; sourceTree = "<group>"; };
 		0711B662B787B708BB331F5EC9E52E3E /* CardStackTransformProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardStackTransformProvider.swift; sourceTree = "<group>"; };
+		0A4B3092297166519217A25AD70D5341 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Sources/ConstraintMaker.swift; sourceTree = "<group>"; };
+		0AFDF096C3836F945945C9FFDB5090F5 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Sources/Constraint.swift; sourceTree = "<group>"; };
 		0D349DE92B4DE463598BF6F5B11FF738 /* WZCardSlide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZCardSlide.debug.xcconfig; sourceTree = "<group>"; };
 		0E47857C933364FF964D7C073D816F22 /* WZCardSlide-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZCardSlide-umbrella.h"; sourceTree = "<group>"; };
+		0EE5F8CB92905AE76169A71226B44035 /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
+		104B59E0BF68F3F1B03DDAB165106A11 /* Pods-WZCardSlide_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WZCardSlide_Example-frameworks.sh"; sourceTree = "<group>"; };
+		143498449916D71708A8AF2F96E7320A /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		152EE8343B4F64CFDE73F65CEF14A13F /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Sources/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
 		16A57E569C47454AF4C6185FFDA6E29B /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
 		1736F3D29CA084241D3386DD8242778A /* Animator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		189D99178511913B1C7449B27DD8A043 /* Pods-WZCardSlide_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WZCardSlide_Example.modulemap"; sourceTree = "<group>"; };
 		1C6942C452A0CCE7671355FFD0AA9572 /* CGVector+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "CGVector+Extensions.swift"; sourceTree = "<group>"; };
-		224DBD20CC0BB55A27AB610CB93EF2E7 /* Pods-WZCardSlide_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WZCardSlide_Example-umbrella.h"; sourceTree = "<group>"; };
+		26E5BB7E9F99F41E937A7E2CCEF178BE /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Sources/ConstraintItem.swift; sourceTree = "<group>"; };
 		2AC55DF880D78F37821FBEB3437B62A2 /* CardLayoutProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardLayoutProvider.swift; sourceTree = "<group>"; };
 		302946F7BAE9A8A9B134906B5D88F799 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		3A4A6716F913D82342DC3B6127A542C8 /* Pods_WZCardSlide_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_WZCardSlide_Example.framework; path = "Pods-WZCardSlide_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4A3F6895DEAC70E0811AEBE833018ADC /* Pods-WZCardSlide_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WZCardSlide_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		369DA8D2BE8CFC94472FB41393CE3DC7 /* Pods-WZCardSlide_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WZCardSlide_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		38A6A462E0F0B040B83C8763773533FE /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Sources/LayoutConstraint.swift; sourceTree = "<group>"; };
+		3A4A6716F913D82342DC3B6127A542C8 /* Pods-WZCardSlide_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WZCardSlide_Example"; path = Pods_WZCardSlide_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AF34962F54DAA8DEB0A1D7D4F3FC09A /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Sources/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		412D51A2BEEF78C262C4B3F3798D1702 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Sources/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		458867733779570F7398C76B46AEAF5E /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Sources/ConstraintView.swift; sourceTree = "<group>"; };
+		459BD5FC6E1AC1DB580A99F57C14B32D /* Pods-WZCardSlide_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WZCardSlide_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4C8251A08ED8E6CF34420BBF858126F7 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Sources/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		4D8E492C972C37106642582209FE47F1 /* Pods-WZCardSlide_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WZCardSlide_Example-Info.plist"; sourceTree = "<group>"; };
 		4FBAD651501F2A717AB469E29CFF9B41 /* CardStackAnimationOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardStackAnimationOptions.swift; sourceTree = "<group>"; };
+		5032FD34D5BB9A1F925C649B43CC02DC /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Sources/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
 		50F821C9D5769635BA15AD0F79583393 /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		51CE87F776203C1173317BEB85942F44 /* SwipeCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwipeCard.swift; sourceTree = "<group>"; };
 		5225F33BE2743CAB3042AD0DD08A1572 /* WZCardSlide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WZCardSlide.release.xcconfig; sourceTree = "<group>"; };
-		54252B4FB867B873768BFBEC65F9CBAB /* Pods-WZCardSlide_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WZCardSlide_Example-Info.plist"; sourceTree = "<group>"; };
+		54A0BC61944B3E89515CACB83BB1B976 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Sources/ConstraintDescription.swift; sourceTree = "<group>"; };
 		57993FD32D645C157F59894BDC987B7B /* CardTransformProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardTransformProvider.swift; sourceTree = "<group>"; };
-		5C469564B7176F94A6C370D70C87E608 /* Pods-WZCardSlide_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WZCardSlide_Example.release.xcconfig"; sourceTree = "<group>"; };
+		583BBF75085D255E27A5F9EF9EC203A5 /* ConstraintMakerRelatable+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintMakerRelatable+Extensions.swift"; path = "Sources/ConstraintMakerRelatable+Extensions.swift"; sourceTree = "<group>"; };
 		5DE1956385C8658AA701C58632B38162 /* CardStackStateManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardStackStateManager.swift; sourceTree = "<group>"; };
+		5F2DCDFF2011C08759407B4E2038CA11 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Sources/ConstraintAttributes.swift; sourceTree = "<group>"; };
 		5FF6DE4911E585127FBD70D6BFB37C58 /* SwipeDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeDirection.swift; path = WZCardSlide/Classes/SwipeDirection.swift; sourceTree = "<group>"; };
 		6062F113CDDEB6452E30BC6C25084C7C /* SwipeCardStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwipeCardStack.swift; sourceTree = "<group>"; };
 		6B0DAAFCF4DC350E9C14CB228D98308C /* StringUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		6B93C377593995054C1CCE50CA88ECD1 /* Array+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
 		704B1BC2CC342FD148BE60F92DBDF58D /* TapGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TapGestureRecognizer.swift; sourceTree = "<group>"; };
+		7096225ED146E16EC168C99FEDD215B5 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Sources/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		751D5202E1F291CC13F7AE0CD669B831 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Sources/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		782C19B041349DED0C47AC71C798375C /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
 		7A88F2CBAF30B06E9453D300AA5975F8 /* CardStackAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardStackAnimator.swift; sourceTree = "<group>"; };
+		7BC84DB0CD86A51B4B66E0450CBF40DE /* ConstraintDirectionalInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsetTarget.swift; path = Sources/ConstraintDirectionalInsetTarget.swift; sourceTree = "<group>"; };
+		7DE1005E72143DDAB2D063D4B87F1AD3 /* Pods-WZCardSlide_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WZCardSlide_Example-dummy.m"; sourceTree = "<group>"; };
 		888C7ADBC556928DD556AA916EFEA6A2 /* WZCardSlide-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WZCardSlide-prefix.pch"; sourceTree = "<group>"; };
 		9202BF6A1E46EE2A5BA11A31EB7E8AE2 /* WZCardSlide-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "WZCardSlide-Info.plist"; sourceTree = "<group>"; };
-		98B1A0241E770FB0150E78B12401C207 /* Pods-WZCardSlide_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WZCardSlide_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		932076048BB79360F50A76C2C738DFC8 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		94E42FA589867A878EC039323DA40B7F /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		960E2E91424D9428F311B73888D8E927 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Sources/Typealiases.swift; sourceTree = "<group>"; };
+		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A75CCCECC9D91AE4B7618B58B73CDC5B /* Pods-WZCardSlide_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WZCardSlide_Example-dummy.m"; sourceTree = "<group>"; };
+		9F0A527ED8F0A719FF610D743A87DAD3 /* ConstraintMakerPrioritizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPrioritizable.swift; path = Sources/ConstraintMakerPrioritizable.swift; sourceTree = "<group>"; };
 		AD777C3B72DDB1291C83E30E29205F39 /* SwipeCardDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwipeCardDelegate.swift; sourceTree = "<group>"; };
+		B57B4B15AAC3AB24B43306829FAA77A0 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Sources/ConstraintPriority.swift; sourceTree = "<group>"; };
+		BA50A49AB14A27B030EF455D9943EB8B /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Sources/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		BC8DFD8FEE78807F86F0544749C80450 /* ConstraintDirectionalInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsets.swift; path = Sources/ConstraintDirectionalInsets.swift; sourceTree = "<group>"; };
+		BDF6E18B5372A4BBE8507FE4B9F165C0 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
 		C04520896F1B06CC61A1789F678DE2F1 /* SwipeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		C282AEDFB53BD2F6B277738727FF116D /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Sources/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
 		C38D782B22A985C907FA184E909D3C0B /* SwipeCardStackDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwipeCardStackDelegate.swift; sourceTree = "<group>"; };
 		C4A3C0325A52EBC2DBC14D77E0D214EF /* CardAnimationOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardAnimationOptions.swift; sourceTree = "<group>"; };
+		C5D52A60BF41010F680313572B051598 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Sources/ConstraintInsets.swift; sourceTree = "<group>"; };
 		C5E7243AE67F981459BCCE94F6883A64 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		C6832538F27AD597ED3C6DAEE973DB90 /* SwipeCardStackDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwipeCardStackDataSource.swift; sourceTree = "<group>"; };
-		C70D7DCF4D7229F77292ACEA1675DE22 /* WZCardSlide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WZCardSlide.framework; path = WZCardSlide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70D7DCF4D7229F77292ACEA1675DE22 /* WZCardSlide */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WZCardSlide; path = WZCardSlide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C83141A7BA266489296BCBEF99AC5412 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Sources/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		C873A73086224E2F8A1462666FAE65F2 /* Pods-WZCardSlide_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WZCardSlide_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C91F91B010D4991E838DAC578595BA7A /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Sources/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		CA8F018F796BF112EF91342070EA77EF /* WZCardSlide.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WZCardSlide.modulemap; sourceTree = "<group>"; };
 		D24D622A43EF20EB0BEE6D5CEBF1E32A /* WZCardSlide-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WZCardSlide-dummy.m"; sourceTree = "<group>"; };
+		D2FD9EFCFC3AA452137876B761FFB621 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		DD101E65ADCCC341BCD3BFF777CA947C /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Sources/ConstraintConfig.swift; sourceTree = "<group>"; };
 		DDEDDD5BFDCAC9A615C8BF81CCBED163 /* CardStackLayoutProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardStackLayoutProvider.swift; sourceTree = "<group>"; };
-		EA1018BC3294C1F5D4A949305656208A /* Pods-WZCardSlide_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WZCardSlide_Example.modulemap"; sourceTree = "<group>"; };
+		DDFBBDB0D11D15EA3C0D640EF407F700 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Sources/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		E04B678C00268C9CF7E410145D6F78AA /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Sources/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		E30E74C9EDB065D2E76B3EDCCB6E2153 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Sources/ConstraintRelation.swift; sourceTree = "<group>"; };
 		ECB9C5B6F6BBA524798627CBBA823109 /* PanGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PanGestureRecognizer.swift; sourceTree = "<group>"; };
+		EEE15C12D4B2736CB1D1B07F4838FCA7 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Sources/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		F4CBE69DD3B611E4180FCBDD8CDE8814 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Sources/Debugging.swift; sourceTree = "<group>"; };
+		F55D2A11C17BBCE3C9F7F0BA9555B5AE /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Sources/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		F57C38722D9F65992CF2200038C8651E /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Sources/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		F95C90D707CC8C6861D101E431DDED75 /* Pods-WZCardSlide_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WZCardSlide_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F9C32419EFFEB0CD3BA94877729FECDD /* CardAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CardAnimator.swift; sourceTree = "<group>"; };
-		FCA47BC4496BE4E3C0AF082BE1921EB1 /* Pods-WZCardSlide_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WZCardSlide_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		FE5693124BFA9269D2085EC1ADFAAD76 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Sources/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2C4802ADA028F1B5E8EF885B36D6AC47 /* Frameworks */ = {
+		35F3CC14FF6DB3921FA4B1A188A679A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57780DEAB93869A2A09D084F35689223 /* Foundation.framework in Frameworks */,
+				D335DBAB1AE2AFEC99EF30ED19E49786 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7E3E1DBD759100B8B96C0C365A40DD5 /* Frameworks */ = {
+		C421AFBCE146669560A5A4024F3E56A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDFC32ABBCCA839143B0C445BC4BE92D /* Foundation.framework in Frameworks */,
+				E64B3A97583F88791C498DD227CA308E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E4E7CE8309D3EF7B7476AC57986BE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0833E66E7F19849322305D67777B77DB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		343CCDEE39D1694C3892D39F4E50466A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A4A6716F913D82342DC3B6127A542C8 /* Pods-WZCardSlide_Example */,
+				979486118B3E90C08386079D57962701 /* SnapKit */,
+				C70D7DCF4D7229F77292ACEA1675DE22 /* WZCardSlide */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		403EB05A3920652EED411213C52E3AC2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				94E42FA589867A878EC039323DA40B7F /* SnapKit.modulemap */,
+				143498449916D71708A8AF2F96E7320A /* SnapKit-dummy.m */,
+				D2FD9EFCFC3AA452137876B761FFB621 /* SnapKit-Info.plist */,
+				BDF6E18B5372A4BBE8507FE4B9F165C0 /* SnapKit-prefix.pch */,
+				932076048BB79360F50A76C2C738DFC8 /* SnapKit-umbrella.h */,
+				0EE5F8CB92905AE76169A71226B44035 /* SnapKit.debug.xcconfig */,
+				782C19B041349DED0C47AC71C798375C /* SnapKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,20 +252,12 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		79CEE30D4AD416A8ADC7B5FFFBF2AF8F /* Pods-WZCardSlide_Example */ = {
+		5B60F34D1FB75CBEF9413CF0E4AD14C7 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				EA1018BC3294C1F5D4A949305656208A /* Pods-WZCardSlide_Example.modulemap */,
-				98B1A0241E770FB0150E78B12401C207 /* Pods-WZCardSlide_Example-acknowledgements.markdown */,
-				4A3F6895DEAC70E0811AEBE833018ADC /* Pods-WZCardSlide_Example-acknowledgements.plist */,
-				A75CCCECC9D91AE4B7618B58B73CDC5B /* Pods-WZCardSlide_Example-dummy.m */,
-				54252B4FB867B873768BFBEC65F9CBAB /* Pods-WZCardSlide_Example-Info.plist */,
-				224DBD20CC0BB55A27AB610CB93EF2E7 /* Pods-WZCardSlide_Example-umbrella.h */,
-				FCA47BC4496BE4E3C0AF082BE1921EB1 /* Pods-WZCardSlide_Example.debug.xcconfig */,
-				5C469564B7176F94A6C370D70C87E608 /* Pods-WZCardSlide_Example.release.xcconfig */,
+				DB9DBFE836AD226347F1F1C5582200D8 /* Pods-WZCardSlide_Example */,
 			);
-			name = "Pods-WZCardSlide_Example";
-			path = "Target Support Files/Pods-WZCardSlide_Example";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		7FFD7E0105FF87EB95E63C0BE4059AF4 /* SwipeCardStack */ = {
@@ -174,14 +292,6 @@
 				B40FE1EB1738ABBB584C9675A8A5315C /* WZCardSlide */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		B09468426F9A92E45EF7EF42D8D2F1F6 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				79CEE30D4AD416A8ADC7B5FFFBF2AF8F /* Pods-WZCardSlide_Example */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		B40FE1EB1738ABBB584C9675A8A5315C /* WZCardSlide */ = {
@@ -219,8 +329,9 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				97EB2DBE69F3EDE48927572252D37693 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				F7699EAD2B5A6441D968AE241B727E12 /* Products */,
-				B09468426F9A92E45EF7EF42D8D2F1F6 /* Targets Support Files */,
+				FBE859397B27E4FC4D81B6F5DD24B6F6 /* Pods */,
+				343CCDEE39D1694C3892D39F4E50466A /* Products */,
+				5B60F34D1FB75CBEF9413CF0E4AD14C7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -230,6 +341,69 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D29D3F332511F02C2A2BCFE5288B22D5 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				0AFDF096C3836F945945C9FFDB5090F5 /* Constraint.swift */,
+				5F2DCDFF2011C08759407B4E2038CA11 /* ConstraintAttributes.swift */,
+				DD101E65ADCCC341BCD3BFF777CA947C /* ConstraintConfig.swift */,
+				C282AEDFB53BD2F6B277738727FF116D /* ConstraintConstantTarget.swift */,
+				54A0BC61944B3E89515CACB83BB1B976 /* ConstraintDescription.swift */,
+				BC8DFD8FEE78807F86F0544749C80450 /* ConstraintDirectionalInsets.swift */,
+				7BC84DB0CD86A51B4B66E0450CBF40DE /* ConstraintDirectionalInsetTarget.swift */,
+				02732995CB94C03CB83E1935B434AD74 /* ConstraintDSL.swift */,
+				C5D52A60BF41010F680313572B051598 /* ConstraintInsets.swift */,
+				FE5693124BFA9269D2085EC1ADFAAD76 /* ConstraintInsetTarget.swift */,
+				26E5BB7E9F99F41E937A7E2CCEF178BE /* ConstraintItem.swift */,
+				F55D2A11C17BBCE3C9F7F0BA9555B5AE /* ConstraintLayoutGuide.swift */,
+				E04B678C00268C9CF7E410145D6F78AA /* ConstraintLayoutGuide+Extensions.swift */,
+				C91F91B010D4991E838DAC578595BA7A /* ConstraintLayoutGuideDSL.swift */,
+				BA50A49AB14A27B030EF455D9943EB8B /* ConstraintLayoutSupport.swift */,
+				5032FD34D5BB9A1F925C649B43CC02DC /* ConstraintLayoutSupportDSL.swift */,
+				0A4B3092297166519217A25AD70D5341 /* ConstraintMaker.swift */,
+				F57C38722D9F65992CF2200038C8651E /* ConstraintMakerEditable.swift */,
+				DDFBBDB0D11D15EA3C0D640EF407F700 /* ConstraintMakerExtendable.swift */,
+				412D51A2BEEF78C262C4B3F3798D1702 /* ConstraintMakerFinalizable.swift */,
+				9F0A527ED8F0A719FF610D743A87DAD3 /* ConstraintMakerPrioritizable.swift */,
+				4C8251A08ED8E6CF34420BBF858126F7 /* ConstraintMakerRelatable.swift */,
+				583BBF75085D255E27A5F9EF9EC203A5 /* ConstraintMakerRelatable+Extensions.swift */,
+				00529F62152FE0E9A82AF6D8EAAAE2E1 /* ConstraintMultiplierTarget.swift */,
+				751D5202E1F291CC13F7AE0CD669B831 /* ConstraintOffsetTarget.swift */,
+				B57B4B15AAC3AB24B43306829FAA77A0 /* ConstraintPriority.swift */,
+				7096225ED146E16EC168C99FEDD215B5 /* ConstraintPriorityTarget.swift */,
+				3AF34962F54DAA8DEB0A1D7D4F3FC09A /* ConstraintRelatableTarget.swift */,
+				E30E74C9EDB065D2E76B3EDCCB6E2153 /* ConstraintRelation.swift */,
+				458867733779570F7398C76B46AEAF5E /* ConstraintView.swift */,
+				C83141A7BA266489296BCBEF99AC5412 /* ConstraintView+Extensions.swift */,
+				0072CC268C7456CC1DA6E8180975AB43 /* ConstraintViewDSL.swift */,
+				F4CBE69DD3B611E4180FCBDD8CDE8814 /* Debugging.swift */,
+				38A6A462E0F0B040B83C8763773533FE /* LayoutConstraint.swift */,
+				EEE15C12D4B2736CB1D1B07F4838FCA7 /* LayoutConstraintItem.swift */,
+				960E2E91424D9428F311B73888D8E927 /* Typealiases.swift */,
+				152EE8343B4F64CFDE73F65CEF14A13F /* UILayoutSupport+Extensions.swift */,
+				403EB05A3920652EED411213C52E3AC2 /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		DB9DBFE836AD226347F1F1C5582200D8 /* Pods-WZCardSlide_Example */ = {
+			isa = PBXGroup;
+			children = (
+				189D99178511913B1C7449B27DD8A043 /* Pods-WZCardSlide_Example.modulemap */,
+				F95C90D707CC8C6861D101E431DDED75 /* Pods-WZCardSlide_Example-acknowledgements.markdown */,
+				369DA8D2BE8CFC94472FB41393CE3DC7 /* Pods-WZCardSlide_Example-acknowledgements.plist */,
+				7DE1005E72143DDAB2D063D4B87F1AD3 /* Pods-WZCardSlide_Example-dummy.m */,
+				104B59E0BF68F3F1B03DDAB165106A11 /* Pods-WZCardSlide_Example-frameworks.sh */,
+				4D8E492C972C37106642582209FE47F1 /* Pods-WZCardSlide_Example-Info.plist */,
+				070DAE4BD27050E5804ED444395C7DA9 /* Pods-WZCardSlide_Example-umbrella.h */,
+				C873A73086224E2F8A1462666FAE65F2 /* Pods-WZCardSlide_Example.debug.xcconfig */,
+				459BD5FC6E1AC1DB580A99F57C14B32D /* Pods-WZCardSlide_Example.release.xcconfig */,
+			);
+			name = "Pods-WZCardSlide_Example";
+			path = "Target Support Files/Pods-WZCardSlide_Example";
 			sourceTree = "<group>";
 		};
 		DC307557D8A096B5E139C6631ABB7714 /* Support Files */ = {
@@ -263,31 +437,38 @@
 			path = WZCardSlide/Classes/Internal;
 			sourceTree = "<group>";
 		};
-		F7699EAD2B5A6441D968AE241B727E12 /* Products */ = {
+		FBE859397B27E4FC4D81B6F5DD24B6F6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3A4A6716F913D82342DC3B6127A542C8 /* Pods_WZCardSlide_Example.framework */,
-				C70D7DCF4D7229F77292ACEA1675DE22 /* WZCardSlide.framework */,
+				D29D3F332511F02C2A2BCFE5288B22D5 /* SnapKit */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0D7CF274B554B1514FF2B1B6948E6B0C /* Headers */ = {
+		5FA4790A32ECD84F2CEA55509107BD0A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA4E6E705E9A4E60F5A68FD6B6DF45C8 /* Pods-WZCardSlide_Example-umbrella.h in Headers */,
+				A3E3AB7C765C21AE17B1E6EE6560040C /* SnapKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		91B689643C5E10A1B7C5D0EA4F8B53F2 /* Headers */ = {
+		CB96FEB6DF2D83A97388D80CA8206588 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9693C89E48AF6D11CBAA770B9D759201 /* WZCardSlide-umbrella.h in Headers */,
+				CE6D8A737BC629ECD901664DBA15E024 /* Pods-WZCardSlide_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE4AE58D8F6744396D85CA8152E639C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3185DA160F98E22567CD6C1B57EA810 /* WZCardSlide-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,12 +477,12 @@
 /* Begin PBXNativeTarget section */
 		15A4F3E36762EB251299C73615564215 /* WZCardSlide */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C0FB99CCDC6571DA1C6DD529CF003701 /* Build configuration list for PBXNativeTarget "WZCardSlide" */;
+			buildConfigurationList = 1462CDB639BBCA199264F57A1B2E6D97 /* Build configuration list for PBXNativeTarget "WZCardSlide" */;
 			buildPhases = (
-				91B689643C5E10A1B7C5D0EA4F8B53F2 /* Headers */,
-				5E548AB7DBB8AD90BE4729D27111CF6D /* Sources */,
-				C7E3E1DBD759100B8B96C0C365A40DD5 /* Frameworks */,
-				4363A9FE0498EF105E878875DD178748 /* Resources */,
+				EE4AE58D8F6744396D85CA8152E639C9 /* Headers */,
+				6F77244E896502D3F53CCE962C57744C /* Sources */,
+				C421AFBCE146669560A5A4024F3E56A2 /* Frameworks */,
+				67D6336AC4E3FEACEAC27F83E1953392 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -309,26 +490,45 @@
 			);
 			name = WZCardSlide;
 			productName = WZCardSlide;
-			productReference = C70D7DCF4D7229F77292ACEA1675DE22 /* WZCardSlide.framework */;
+			productReference = C70D7DCF4D7229F77292ACEA1675DE22 /* WZCardSlide */;
 			productType = "com.apple.product-type.framework";
 		};
-		E2A40252773780C4ADE79D40147E39FF /* Pods-WZCardSlide_Example */ = {
+		19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B8A6076367321D8AC4980DB4B6439539 /* Build configuration list for PBXNativeTarget "Pods-WZCardSlide_Example" */;
+			buildConfigurationList = 58EAA7FF29EA237538F747F2AF468203 /* Build configuration list for PBXNativeTarget "SnapKit" */;
 			buildPhases = (
-				0D7CF274B554B1514FF2B1B6948E6B0C /* Headers */,
-				00DC2F1391828B8F0464B1B7C3CF2A50 /* Sources */,
-				2C4802ADA028F1B5E8EF885B36D6AC47 /* Frameworks */,
-				75FD93732432EF2778760EF908CEF5BC /* Resources */,
+				5FA4790A32ECD84F2CEA55509107BD0A /* Headers */,
+				7B7E69B2799BABEB7764F85296B591B7 /* Sources */,
+				E8E4E7CE8309D3EF7B7476AC57986BE9 /* Frameworks */,
+				820C67429A90336F5AF1C850DF03B1B9 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0467CCC0D0D8817D623C53FB9AD2772A /* PBXTargetDependency */,
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 979486118B3E90C08386079D57962701 /* SnapKit */;
+			productType = "com.apple.product-type.framework";
+		};
+		E2A40252773780C4ADE79D40147E39FF /* Pods-WZCardSlide_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E431AB6EF59D4FCD251E4CCED391C618 /* Build configuration list for PBXNativeTarget "Pods-WZCardSlide_Example" */;
+			buildPhases = (
+				CB96FEB6DF2D83A97388D80CA8206588 /* Headers */,
+				A4B87E6242E8FB381F75475225CD47D4 /* Sources */,
+				35F3CC14FF6DB3921FA4B1A188A679A2 /* Frameworks */,
+				E50732EF70F10E00F9356E7E17C384DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2928CD109D2714D2DA10848768A344A /* PBXTargetDependency */,
+				6C06574983647B39987409F3F369B20D /* PBXTargetDependency */,
 			);
 			name = "Pods-WZCardSlide_Example";
-			productName = "Pods-WZCardSlide_Example";
-			productReference = 3A4A6716F913D82342DC3B6127A542C8 /* Pods_WZCardSlide_Example.framework */;
+			productName = Pods_WZCardSlide_Example;
+			productReference = 3A4A6716F913D82342DC3B6127A542C8 /* Pods-WZCardSlide_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -337,37 +537,45 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = F7699EAD2B5A6441D968AE241B727E12 /* Products */;
+			productRefGroup = 343CCDEE39D1694C3892D39F4E50466A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E2A40252773780C4ADE79D40147E39FF /* Pods-WZCardSlide_Example */,
+				19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */,
 				15A4F3E36762EB251299C73615564215 /* WZCardSlide */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4363A9FE0498EF105E878875DD178748 /* Resources */ = {
+		67D6336AC4E3FEACEAC27F83E1953392 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75FD93732432EF2778760EF908CEF5BC /* Resources */ = {
+		820C67429A90336F5AF1C850DF03B1B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50732EF70F10E00F9356E7E17C384DE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -377,61 +585,112 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00DC2F1391828B8F0464B1B7C3CF2A50 /* Sources */ = {
+		6F77244E896502D3F53CCE962C57744C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECFDA0928ABA7BAF1493D31F53468C76 /* Pods-WZCardSlide_Example-dummy.m in Sources */,
+				1B9EFDF355E6072BCF9FD55AB4D1862A /* Animator.swift in Sources */,
+				AA862453514742FF6BBC8CE662E1D35A /* Array+Extensions.swift in Sources */,
+				A8C7A2441231266A3519C067EB2994E9 /* CardAnimationOptions.swift in Sources */,
+				DC19B442EE878309E7C88A351285031D /* CardAnimator.swift in Sources */,
+				6E4B1EB37B8C106377868CB03196C334 /* CardLayoutProvider.swift in Sources */,
+				8EDA4F1E22B84DAD586D085143C2AC4D /* CardStackAnimationOptions.swift in Sources */,
+				0FE1FE75079E10E6D2B6D7589236C26B /* CardStackAnimator.swift in Sources */,
+				2D85CB3B39C8E74B9F751B6FBB269613 /* CardStackLayoutProvider.swift in Sources */,
+				43AF520995873E0161D50E366E87A24B /* CardStackStateManager.swift in Sources */,
+				3DCB719CE382C8C1FF6CFAF188585054 /* CardStackTransformProvider.swift in Sources */,
+				7286183F80A5D7E104E3D948552E746E /* CardTransformProvider.swift in Sources */,
+				B11ADFD09AB34574249C704B4AD7789F /* CGPoint+Extensions.swift in Sources */,
+				FD2B95540ABD2220E6BC90904BF0BF8C /* CGVector+Extensions.swift in Sources */,
+				19F83B7FC6E094BDB5A16C179781D199 /* PanGestureRecognizer.swift in Sources */,
+				84DB622904E8BD68721647C7027252F2 /* StringUtils.swift in Sources */,
+				D6440843DDC685FE6B20E4C9D0CCAD4E /* SwipeCard.swift in Sources */,
+				1A44ABC0CDC1E7F6BD2FA905F2A70710 /* SwipeCardDelegate.swift in Sources */,
+				2DC6351C5548BC67E049E24739F8584C /* SwipeCardStack.swift in Sources */,
+				9ECF471B204BFCF3D3FC429085466110 /* SwipeCardStackDataSource.swift in Sources */,
+				CB4333855C4E7B59E64D569A8DCE676B /* SwipeCardStackDelegate.swift in Sources */,
+				FC308110B84D7960267FE623E3C426E9 /* SwipeDirection.swift in Sources */,
+				780C74FE977F3B1A2BB01AA614849142 /* SwipeView.swift in Sources */,
+				5006089FA6D85A971731559077E570B8 /* TapGestureRecognizer.swift in Sources */,
+				AEFCBBD98D2B88977878431D1C628C46 /* UIView+Extensions.swift in Sources */,
+				402564CC886F5B58F9AD003E5F1B77F7 /* WZCardSlide-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E548AB7DBB8AD90BE4729D27111CF6D /* Sources */ = {
+		7B7E69B2799BABEB7764F85296B591B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11E2E59F246021470A9DD2C50992CF08 /* Animator.swift in Sources */,
-				450B0C95A9FDBE8DFA8202D7DD85DE72 /* Array+Extensions.swift in Sources */,
-				83050704652AA63D6579B78517906BB1 /* CardAnimationOptions.swift in Sources */,
-				3F0343753BF75DA48B35D3CC8390D939 /* CardAnimator.swift in Sources */,
-				6A953374E04E101DB093B3EBE0B9175E /* CardLayoutProvider.swift in Sources */,
-				D8E556147F1CAD6D10C28EDDE1FFB5EC /* CardStackAnimationOptions.swift in Sources */,
-				2B5D1D853494BCB033F61EB0A6880BB5 /* CardStackAnimator.swift in Sources */,
-				F16350A3F05AFC955E2845BC6D2CFC57 /* CardStackLayoutProvider.swift in Sources */,
-				48A40B90CBE2EB20600A169E3993A425 /* CardStackStateManager.swift in Sources */,
-				E4C39CDCD1BBD2441B2FE7BD0243ABD5 /* CardStackTransformProvider.swift in Sources */,
-				3DCA149202E42F5CC8E31B58AB2EF4CB /* CardTransformProvider.swift in Sources */,
-				34E0477782CA412ABF53925CFDF2DA75 /* CGPoint+Extensions.swift in Sources */,
-				DEFF0ABFAF80B0F9DCC97CEC96B2AFFC /* CGVector+Extensions.swift in Sources */,
-				10B6E2A3F5F2F1D91CEA6A7065A8A65B /* PanGestureRecognizer.swift in Sources */,
-				2632CF3655D8D306DDC4D904AFC4DB83 /* StringUtils.swift in Sources */,
-				05F14846149661E2AE74598823379D1E /* SwipeCard.swift in Sources */,
-				B887A41E8BBEA44EF5F811D16337E81E /* SwipeCardDelegate.swift in Sources */,
-				2338F22C40B804B37E76250984609C90 /* SwipeCardStack.swift in Sources */,
-				05695B6E6B014DFF25A0B1F0B61F432E /* SwipeCardStackDataSource.swift in Sources */,
-				E6F4F6E33E3A4A58AB4B831FEC7222ED /* SwipeCardStackDelegate.swift in Sources */,
-				10DAF6E6CA7DA5DF10C69634251C3FE1 /* SwipeDirection.swift in Sources */,
-				951E9FF47E19A38ECC1CDA7A8ADDB1D8 /* SwipeView.swift in Sources */,
-				FFCDE30732D33B05D78BBC901C1B4540 /* TapGestureRecognizer.swift in Sources */,
-				58EA002E167192421902BDF88BB18A71 /* UIView+Extensions.swift in Sources */,
-				C1CF0F43AC1ABE1286C17F6C5961D96D /* WZCardSlide-dummy.m in Sources */,
+				6EAC8B6FA2D115DE708A58C601DD25E1 /* Constraint.swift in Sources */,
+				0B994CDC79B1AD3A7BE62490D27C60C8 /* ConstraintAttributes.swift in Sources */,
+				3660B4F629053ABC3C1DF69366770289 /* ConstraintConfig.swift in Sources */,
+				9C9548E8B4675954566202F7B87FF0E6 /* ConstraintConstantTarget.swift in Sources */,
+				5380454C48A12A6E376122ABD8096968 /* ConstraintDescription.swift in Sources */,
+				E98DC8FB2578E76A812E0C94BA10E1B1 /* ConstraintDirectionalInsets.swift in Sources */,
+				04637C70546B34F93C3A1D79C3F78B37 /* ConstraintDirectionalInsetTarget.swift in Sources */,
+				56AC6DC6459AE47E7BC4AF06E5B148D2 /* ConstraintDSL.swift in Sources */,
+				604D3C93C17978C23600EC415949AB64 /* ConstraintInsets.swift in Sources */,
+				9E02CFFEFE1BEC978B512286F03D31DA /* ConstraintInsetTarget.swift in Sources */,
+				69DE75BA185BBAB5FDAA28321F3C849F /* ConstraintItem.swift in Sources */,
+				611CEF7FF1EF9EA1BCEF6C73EEE3ACCF /* ConstraintLayoutGuide.swift in Sources */,
+				6AC1B881BB319C89AD023A02CDC8FC3D /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				EF21586EC3DFF6097A58EEC87376A0C1 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				00A2749F46C967ED4725A32357E3FB1B /* ConstraintLayoutSupport.swift in Sources */,
+				56A72F6D13D930C4A2568F24DEA33C8D /* ConstraintLayoutSupportDSL.swift in Sources */,
+				FAB03959C2357E325B19E08BC4775DAB /* ConstraintMaker.swift in Sources */,
+				220D6AC9B1B1EC8EFFB204F9C1EAC842 /* ConstraintMakerEditable.swift in Sources */,
+				A5A8BF973BFE9C9304372A26C9F2E35B /* ConstraintMakerExtendable.swift in Sources */,
+				42B6ACFCF650183030867CB3EF345E95 /* ConstraintMakerFinalizable.swift in Sources */,
+				B43017FEC99D227D4CDD81DD2C27D9D9 /* ConstraintMakerPrioritizable.swift in Sources */,
+				183D8B3E057B885EA7DF9A8CDCCE9029 /* ConstraintMakerRelatable.swift in Sources */,
+				95E194A3AABB5407231E898B6686F73E /* ConstraintMakerRelatable+Extensions.swift in Sources */,
+				F7C0960CEEB8F0C18F4503B405EAC08F /* ConstraintMultiplierTarget.swift in Sources */,
+				A03FDA8BC5741880B1EF11AFD248EF48 /* ConstraintOffsetTarget.swift in Sources */,
+				06E43B4751069B47B3BD4AFD936A57E3 /* ConstraintPriority.swift in Sources */,
+				4DA72FD7F1FB2C0449EDEF4B8A579807 /* ConstraintPriorityTarget.swift in Sources */,
+				55E51F45F1E157D3B4942BA7252C277E /* ConstraintRelatableTarget.swift in Sources */,
+				4BAD99B7394E225CEDBF94B8100BCC7F /* ConstraintRelation.swift in Sources */,
+				B752F7C4BECB65894B1F49421049CE5F /* ConstraintView.swift in Sources */,
+				F953AA9104BFE0C2DAD639EA60104A75 /* ConstraintView+Extensions.swift in Sources */,
+				256558233B40ACA6818F143BBC5B8017 /* ConstraintViewDSL.swift in Sources */,
+				5D36B99F3CAB1FC7337082D9581FECA6 /* Debugging.swift in Sources */,
+				0591132B5EA1BE4DDA268D8A9C3D0421 /* LayoutConstraint.swift in Sources */,
+				98F570DA48370453D648BD526FDAAEAA /* LayoutConstraintItem.swift in Sources */,
+				BD47CB74CD9B2B4D2D942C9B65748DFB /* SnapKit-dummy.m in Sources */,
+				B03B5579590D528CBA6D11FF638BC2AF /* Typealiases.swift in Sources */,
+				38B9D58E94D9C1CECD7E381C64A2329D /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4B87E6242E8FB381F75475225CD47D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2314695CF1B61B0B1EC4C5A5B5896FEA /* Pods-WZCardSlide_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0467CCC0D0D8817D623C53FB9AD2772A /* PBXTargetDependency */ = {
+		6C06574983647B39987409F3F369B20D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WZCardSlide;
 			target = 15A4F3E36762EB251299C73615564215 /* WZCardSlide */;
-			targetProxy = 7AF692519AAD24470931876C7CA60B51 /* PBXContainerItemProxy */;
+			targetProxy = E65A7B76DC5E1221069E4170FACBEB21 /* PBXContainerItemProxy */;
+		};
+		B2928CD109D2714D2DA10848768A344A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = AB1778526F60BC71EEEEFF325BB25A1B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		06156B71326D655E00EB61B810D9C9F5 /* Release */ = {
+		006B4523045A8265E7E1386C5400783A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5225F33BE2743CAB3042AD0DD08A1572 /* WZCardSlide.release.xcconfig */;
+			baseConfigurationReference = 0D349DE92B4DE463598BF6F5B11FF738 /* WZCardSlide.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -457,11 +716,44 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
+		};
+		278BB14DD0CD14D51A393D221DE3653F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C873A73086224E2F8A1462666FAE65F2 /* Pods-WZCardSlide_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WZCardSlide_Example/Pods-WZCardSlide_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WZCardSlide_Example/Pods-WZCardSlide_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -529,9 +821,76 @@
 			};
 			name = Debug;
 		};
-		58E655E3E9B3E78427E384B202DF4189 /* Release */ = {
+		321A2120D400C5B8DC97CEE0924C9F21 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C469564B7176F94A6C370D70C87E608 /* Pods-WZCardSlide_Example.release.xcconfig */;
+			baseConfigurationReference = 782C19B041349DED0C47AC71C798375C /* SnapKit.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		49A7D804E50E94039C3725A96B8969E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5225F33BE2743CAB3042AD0DD08A1572 /* WZCardSlide.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WZCardSlide/WZCardSlide-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WZCardSlide/WZCardSlide-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/WZCardSlide/WZCardSlide.modulemap";
+				PRODUCT_MODULE_NAME = WZCardSlide;
+				PRODUCT_NAME = WZCardSlide;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		54B50C77E49C0155F3CC2486C50EEC4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 459BD5FC6E1AC1DB580A99F57C14B32D /* Pods-WZCardSlide_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
@@ -626,9 +985,9 @@
 			};
 			name = Release;
 		};
-		71006FFF5330687E1948AAFB2B26F619 /* Debug */ = {
+		6688C80B0CBE2F2015FBE8A08157FE38 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D349DE92B4DE463598BF6F5B11FF738 /* WZCardSlide.debug.xcconfig */;
+			baseConfigurationReference = 0EE5F8CB92905AE76169A71226B44035 /* SnapKit.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -640,15 +999,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WZCardSlide/WZCardSlide-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WZCardSlide/WZCardSlide-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/WZCardSlide/WZCardSlide.modulemap";
-				PRODUCT_MODULE_NAME = WZCardSlide;
-				PRODUCT_NAME = WZCardSlide;
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -659,43 +1017,18 @@
 			};
 			name = Debug;
 		};
-		93A133607B89D31FE0C5D89CB851692D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCA47BC4496BE4E3C0AF082BE1921EB1 /* Pods-WZCardSlide_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WZCardSlide_Example/Pods-WZCardSlide_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WZCardSlide_Example/Pods-WZCardSlide_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1462CDB639BBCA199264F57A1B2E6D97 /* Build configuration list for PBXNativeTarget "WZCardSlide" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				006B4523045A8265E7E1386C5400783A /* Debug */,
+				49A7D804E50E94039C3725A96B8969E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -705,20 +1038,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B8A6076367321D8AC4980DB4B6439539 /* Build configuration list for PBXNativeTarget "Pods-WZCardSlide_Example" */ = {
+		58EAA7FF29EA237538F747F2AF468203 /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				93A133607B89D31FE0C5D89CB851692D /* Debug */,
-				58E655E3E9B3E78427E384B202DF4189 /* Release */,
+				6688C80B0CBE2F2015FBE8A08157FE38 /* Debug */,
+				321A2120D400C5B8DC97CEE0924C9F21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C0FB99CCDC6571DA1C6DD529CF003701 /* Build configuration list for PBXNativeTarget "WZCardSlide" */ = {
+		E431AB6EF59D4FCD251E4CCED391C618 /* Build configuration list for PBXNativeTarget "Pods-WZCardSlide_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				71006FFF5330687E1948AAFB2B26F619 /* Debug */,
-				06156B71326D655E00EB61B810D9C9F5 /* Release */,
+				278BB14DD0CD14D51A393D221DE3653F /* Debug */,
+				54B50C77E49C0155F3CC2486C50EEC4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

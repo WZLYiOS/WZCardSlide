@@ -1,16 +1,23 @@
 PODS:
-  - WZCardSlide (2.1.0)
+  - SnapKit (5.6.0)
+  - WZCardSlide (2.1.3)
 
 DEPENDENCIES:
+  - SnapKit
   - WZCardSlide (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
 
 EXTERNAL SOURCES:
   WZCardSlide:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WZCardSlide: 2a90bb535549a6c30eff179bd5b56d91f930f85a
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  WZCardSlide: ca4a6b951b65aa441e37a625de69563b674fdf76
 
-PODFILE CHECKSUM: cf9a6763dd8274a2816a5c67933d6694b5994f09
+PODFILE CHECKSUM: 0aa42603f266660b97f05a034bf2a5670f185f8c
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.11.3

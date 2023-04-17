@@ -1,5 +1,7 @@
+source 'https://cdn.cocoapods.org'
 use_frameworks!
 
 target 'WZCardSlide_Example' do
   pod 'WZCardSlide', :path => '../'
+  pod 'SnapKit'
 end
