@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WZCardSlide'
-  s.version          = '2.1.5'
+  s.version          = '2.1.6'
   s.summary          = 'A short description of WZCardSlide.卡片滑动'
 
 

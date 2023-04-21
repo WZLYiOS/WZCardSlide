@@ -18,6 +18,10 @@ public protocol SwipeCardStackDelegate: AnyObject {
     func cardStackDidBeginAnimating(_ cardStack: SwipeCardStack, didSelectCardAt index: Int)
     
     
+    /// 滑动中的卡片
+    /// - Parameter cardStack: SwipeCardStack
+    func cardStackDidContinueSwipe(_ cardStack: SwipeCardStack, didSelectCardAt index: Int)
+    
     /// 卡片动画结束
     /// - Parameter cardStack: SwipeCardStack
     func cardStackDidEndAnimating(_ cardStack: SwipeCardStack)
