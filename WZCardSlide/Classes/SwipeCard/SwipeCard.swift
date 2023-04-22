@@ -8,11 +8,6 @@
 
 import UIKit
 
-
-/// MARK - 卡片通知
-let CardDidFinishSwipeAnimationNotification = NSNotification.Name(rawValue: "cardDidFinishSwipeAnimation")
-
-
 /// MARK - 卡片视图
 open class SwipeCard: SwipeView {
     
@@ -60,7 +55,7 @@ open class SwipeCard: SwipeView {
     /// 滑动完成
     var swipeCompletionBlock: () -> Void {
         return { [weak self] in
-            self?.notificationCenter.post(name: CardDidFinishSwipeAnimationNotification, object: self)
+            self?.removeFromSuperview()
         }
     }
     
@@ -77,14 +72,11 @@ open class SwipeCard: SwipeView {
     public var overlaysIsFullScreen: Bool = false
     private let overlayContainer = UIView()
     private var overlays = [SwipeDirection: UIView]()
-    
     private var animator: CardAnimatable = CardAnimator()
     private var layoutProvider: CardLayoutProvidable = CardLayoutProvider()
-    private var notificationCenter = NotificationCenter.default
     private var transformProvider: CardTransformProvidable = CardTransformProvider()
     
     // MARK: - Initialization
-    
     override public init(frame: CGRect) {
         super.init(frame: frame)
         initialize()
@@ -97,12 +89,10 @@ open class SwipeCard: SwipeView {
     
     convenience init(animator: CardAnimatable,
                      layoutProvider: CardLayoutProvidable,
-                     notificationCenter: NotificationCenter,
                      transformProvider: CardTransformProvidable) {
         self.init(frame: .zero)
         self.animator = animator
         self.layoutProvider = layoutProvider
-        self.notificationCenter = notificationCenter
         self.transformProvider = transformProvider
     }
     

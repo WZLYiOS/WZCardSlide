@@ -62,6 +62,8 @@ extension ViewController: SwipeCardStackDataSource {
     func cardStack(_ cardStack: SwipeCardStack, cardForIndexAt index: Int) -> SwipeCard {
      
         let view = HomeUserDetailsView()
+        view.isUserInteractionEnabled = true
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapAction)))
         view.buider(text: "\(index)")
         return view
     }
@@ -69,6 +71,10 @@ extension ViewController: SwipeCardStackDataSource {
 
 /// MARK - SwipeCardStackDelegate
 extension ViewController: SwipeCardStackDelegate {
+    func cardStackDidContinueSwipe(_ cardStack: WZCardSlide.SwipeCardStack, didSelectCardAt index: Int) {
+        
+    }
+    
     func cardStackDidBeginAnimating(_ cardStack: WZCardSlide.SwipeCardStack, didSelectCardAt index: Int) {
         
     }
@@ -102,7 +108,12 @@ extension ViewController: SwipeCardStackDelegate {
     }
     
     func cardStackIsCanMove(_ cardStack: WZCardSlide.SwipeCardStack, didSwipeCardAt index: Int) -> Bool {
-        return index == 2 ? false : true
+//        return index == 2 ? false : true
+        return true
+    }
+    
+    @objc private func tapAction(){
+        stackSwipeView.swipe(.right, animated: true)
     }
 }
 

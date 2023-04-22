@@ -90,7 +90,7 @@ open class SwipeCardStack: UIView, SwipeCardDelegate, UIGestureRecognizerDelegat
     public var transformProvider: CardStackTransformProvidable = CardStackTransformProvider()
     
     /// 通知
-    private var notificationCenter = NotificationCenter()
+//    private var notificationCenter = NotificationCenter()
     
     /// 卡容器视图
     private let cardContainer = UIView()
@@ -108,23 +108,17 @@ open class SwipeCardStack: UIView, SwipeCardDelegate, UIGestureRecognizerDelegat
     
     convenience init(animator: CardStackAnimatable,
                      layoutProvider: CardStackLayoutProvidable,
-                     notificationCenter: NotificationCenter,
                      stateManager: CardStackStateManagable,
                      transformProvider: CardStackTransformProvidable) {
         self.init(frame: .zero)
         self.animator = animator
         self.layoutProvider = layoutProvider
-        self.notificationCenter = notificationCenter
         self.stateManager = stateManager
         self.transformProvider = transformProvider
     }
     
     private func initialize() {
         addSubview(cardContainer)
-        notificationCenter.addObserver(self,
-                                       selector: #selector(didFinishSwipeAnimation),
-                                       name: CardDidFinishSwipeAnimationNotification,
-                                       object: nil)
     }
     
     // MARK: - Layout
@@ -496,14 +490,6 @@ open class SwipeCardStack: UIView, SwipeCardDelegate, UIGestureRecognizerDelegat
         reloadVisibleCards()
     }
     
-    // MARK: - Notifications
-    @objc
-    func didFinishSwipeAnimation(_ notification: NSNotification) {
-        guard let card = notification.object as? SwipeCard else { return }
-        card.removeFromSuperview()
-    }
-    
-    
     // MARK: - SwipeCardDelegate
     func card(didTap card: SwipeCard) {
         guard let topCardIndex = topCardIndex else { return }
@@ -516,7 +502,7 @@ open class SwipeCardStack: UIView, SwipeCardDelegate, UIGestureRecognizerDelegat
     }
     
     func card(didContinueSwipe card: SwipeCard) {
-        delegate?.cardStackDidContinueSwipe(self, didSelectCardAt: topCardIndex ?? 0)
+        delegate?.cardStackDidBeginAnimating(self, didSelectCardAt: topCardIndex ?? 0)
         for (position, backgroundCard) in backgroundCards.enumerated() {
             backgroundCard.transform = transformProvider.backgroundCardDragTransform(for: self,
                                                                                      topCard: card,
